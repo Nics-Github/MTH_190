@@ -9,6 +9,17 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+    
+    sidebar:
+    - id: Day_1
+      title: "Day_1"
+      style: "floating"
+      collapse-level: 2
+      align: left
+      contents:
+        - href: Day_1.qmd
+        
+
 
 format:
   html:

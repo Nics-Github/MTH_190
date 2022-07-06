@@ -1,0 +1,340 @@
+---
+title: "Problem Sets"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: true
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE, message=FALSE, warning = FALSE, eval = TRUE, 
+  fig.width = 16/2, fig.height = 9/2
+)
+
+# Set seed value of random number generator to get "replicable" random numbers.
+# Why 76? Because of https://www.youtube.com/watch?v=xjJ7FheCkCU
+set.seed(76)
+```
+
+<!--
+{target="_blank"}
+-->
+
+<style>
+h1{font-weight: 400;}
+</style>
+
+
+
+***
+
+
+
+# Extension Requests
+
+* You have an extension "budget" of a maximum of 5 days for the rest of the semester; it's up to you to keep track of your budget
+* Request must be made before due date/time.
+* [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSeCrhqs-iTD5qPcf4FfcFNHE_rwMuaeF37yQuwusRsP9xHJ_Q/viewform){target="_blank"}
+
+
+
+***
+
+
+
+# Problem set 07 {#PS07}
+
+*Due Monday 12/6 9pm*
+
+For this problem set you will start building a GitHub portfolio of work. You need to complete all steps to receive full credit.
+
+
+
+## 1. Edit your public GitHub profile
+
+**Learning Goal**: Edit your public GitHub profile (if you haven't already). Think of this as a professional profile like a LinkedIn profile. Refer to Sec02 in-class data assistant Marium Tapal's [profile](https://github.com/mariumtapal){target="_blank"} as an example.
+
+1. Add your name
+1. Change your default profile picture. It doesn't have to include your face if you're not comfortable.
+1. Add whatever other info to your profile you feel comfortable being public.
+
+
+## 2. Create your first repo with a README
+
+**Learning Goal**: Build your first README. Think of this as a cover page to market your project.
+
+1. Get started
+    1. Download the following zip file: <a href="static/PS/PS07.zip" download>`PS07.zip`</a>.
+    1. Move `PS07.zip` to your SDS192 folder on your computer
+    1. Unzip `PS07.zip`. Windows users: be sure to "Extract all"
+    1. In the resulting PS07 folder, double-click the RStudio Project `PS07.Rproj` icon. For this PS you should **always** work in "PS07" RStudio Project mode
+1. Change the default contents of `README.Rmd` to anything you like. In particular look at RStudio menu bar -> Help -> Markdown Quick Reference for markdown formatting tips.
+    1. Title
+    1. Section names
+    1. The plot (change it to be a `ggplot2` plot)
+1. Knit `README.Rmd` to produce `README.md` which is your repo's cover page
+1. Put your work on GitHub. See screencast:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4-9z_MIGvXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## 3. Submission
+
+Submit a link to this GitHub repository using this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSf8wZIviqbDpf0jtecTGgg35LnKTvnW26tDZMhh1OB59bFexQ/viewform){target="_blank"}. 
+
+
+
+
+
+<!--
+1. **Start this problem set early!** That way you will have time to get help at the Spinelli Center tutoring hours if you run into trouble.
+1. **I will not answer your questions until you've been to the Spinelli Center Sun-Thurs 7-9pm tutoring hours first.**
+    + It will be very difficult for me to help 68 students individually. Please help me spread the workload. If you're stuck, please get help at the Spinelli Center first: that way they can handle the easy questions, leaving only the harder ones for me. I will be asking you if you've already gone to the Spinelli Center first before answering any of your questions.
+    + Note that tutoring from 6pm on Tuesday November 26th through noon on Sunday December 1st is cancelled.
+1. **GitHub frustrations are normal.** Git and GitHub are extremely powerful tools, but they can be very frustrating at times. This is normal. Check out the title of this [zine](https://gumroad.com/l/oh-shit-git){target="_blank"} made by [Julia Evans](https://twitter.com/b0rk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor){target="_blank"} for advanced users.
+
+## 1. GitHub component {#PS07_R}
+
+**Note**: I sent an email on Saturday inviting you to the [Fall 2019 SDS192 Intro to Data Science
+](https://github.com/192-2019-09-Fall){target="_blank"} GitHub Classroom Organization. Please accept this invitation.
+
+For this PS you will be using the ["Happy Git and GitHub for the useR"](https://happygitwithr.com/){target="_blank"} book to:
+
+1. Get familiar with GitHub. Read:
+    + Chapter 1: Why Git? Why GitHub?
+1. Install GitHub on your computers and set it up. Read and perform all steps in:
+    + ~~Chapter 4: Register a GitHub account~~ You've already done this
+    + ~~Chapter 5: Install or upgrade R and RStudio~~ You've already done this
+    + Chatper 6: Install Git
+    + Chapter 7: Introduce yourself to Git
+1. Locate the GitHub repository you created in Lec32. 
+    + You should be able to see it [here](https://github.com/192-2019-09-Fall){target="_blank"} and it should be named something like `learning-github-YOUR_GITHUB_USER_NAME`. So for example, my repo would be called `learning-github-rudeboybert`.
+    + If you don't see it, accept this [invitation](https://classroom.github.com/a/sgKoAnsq){target="_blank"} to receive one. 
+1. "Clone" the above repo into RStudio on your computer. Read and perform all steps in:
+    + Chapter 12: Connect RStudio to Git and GitHub. **For Section 12.2** ignore what's in the book and do the following:
+        1. You will not "Make a repo on GitHub," but rather use the `learning-github-YOUR_GITHUB_USER_NAME` repo from the previous step. 
+        1. Click the big green button "Create repository."
+        1. Copy the HTTPS clone URL to your clipboard via the green “Clone or Download” button.
+1. You do not need to submit anything. Completing Chapter 12 will automatically update your submission on GitHub classroom.  
+
+
+## 2. Hint {#PS07hint}
+
+How do I know if I've successfully completed the assignment?
+
+1. Go to the [SDS192 Intro to Data Science](https://github.com/192-2019-09-Fall) GitHub organization and make sure you see your `learning-github-YOUR_GITHUB_USER_NAME` folder.
+1. Then go to your `learning-github-YOUR_GITHUB_USER_NAME` folder and then look at your README. There should be the line "This is a line from RStudio" on it. 
+-->
+
+
+
+***
+
+
+
+# Problem set 06 {#PS06}
+
+*Due Monday 11/15 9pm*
+
+## 1. R Markdown component {#PS06_R}
+
+Getting started:
+
+* Download the following zip file: <a href="static/PS/PS06.zip" download>`PS06.zip`</a>.
+* Move `PS06.zip` to your SDS192 folder on your computer
+* Unzip `PS06.zip`. Windows users: be sure to "Extract all"
+* In the resulting PS06 folder, double-click the RStudio Project `PS06.Rproj` icon. For this PS you sound **always** work in "PS06" RStudio Project mode (See Lec26 Mon 11/8)
+
+Submission:
+
+* You will only be submitting the resulting `PS06.pdf` file on gradescope. Please use the "Knit to PDF" method directly, instead of "Knit to Word" and then save to PDF method.
+* If you encounter issues knitting your document, consult the [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"}.
+* Submit on [gradescope](https://www.gradescope.com/courses/308310){target="_blank"}:
+    1. For each questions, tag **all** pages of your PDF that relate to that question (not just the first)
+    1. You will be asked to tag the honor code question as well.
+
+
+
+***
+
+
+
+# Problem set 05 {#PS05}
+
+*Due Monday 10/25 9pm*
+
+## 1. R Markdown component {#PS05_R}
+
+* Download the following Rmd template file: <a href="static/PS/PS05.Rmd" download>`PS05.Rmd`</a>.
+* You will be submitting the resulting `PS05.pdf` file on gradescope. Please use the "Knit to PDF" method directly, instead of "Knit to Word" and then save to PDF method.
+* Complete the individual questions. Knit early, knit often.
+* If you encounter issues knitting your document, consult the [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"}.
+* Submit on [gradescope](https://www.gradescope.com/courses/308310){target="_blank"}:
+    1. For each questions, tag **all** pages of your PDF that relate to that question (not just the first)
+    1. You will be asked to tag the honor code question as well.
+
+
+
+## 2. Solutions {#PS05_solutions}
+
+* <a href="static/PS/PS05_solutions.Rmd" download>`PS05_solutions.Rmd`</a> R Markdown "source code" 
+* [`PS05_solutions.pdf`](static/PS/PS05_solutions.pdf){target="_blank"} PDF
+
+
+**Solutions to PS05 Q1.c)**. What happened to the average age above 60? The hint given on Slack was to look at the `ggplot2` cheatsheet -> 2nd page -> Bottom right corner -> "Zooming"
+
+* `ylim(a, b)` sets the limit on the y-axis to be between `a` to `b` and "clips" (throws out) any points outside this interval
+* `coord_cartesian(ylim=c(a, b))` zooms in on the the y-axis to be between `a` to `b` but does not "clip" (throw out) the points outside this interval
+
+For example, consider the following regression line: 
+
+```{r, fig.width = 8/1.5, height = 4.5/1.5, eval=TRUE}
+library(ggplot2)
+library(dplyr)
+
+example <- tibble(
+  x = c(1, 2, 3, 4, 5),
+  y = c(1, 1, 1, 1, 5)
+)
+
+ggplot(example, aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+```
+
+Let's set the y-axis limit to be between 0 and 3. Using `ylim(0, 3)` clips out the point `(5, 5)` and thus the regression line is flat:
+
+```{r, fig.width = 8/1.5, height = 4.5/1.5, eval=TRUE}
+ggplot(example, aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  ylim(0, 3)
+```
+
+However, using `coord_cartesian(ylim = c(0, 3))` merely zooms in on this part of the y-axis without clipping the point `(5, 5)` and thus the regression line is the original one: 
+
+```{r, fig.width = 8/1.5, height = 4.5/1.5, eval=TRUE}
+ggplot(example, aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  coord_cartesian(ylim = c(0, 3))
+```
+
+
+
+
+***
+
+
+
+
+# Problem set 04 {#PS04}
+
+*Due Monday 10/18 9pm*
+
+## 1. R Markdown component {#PS04_R}
+
+* Download the following Rmd template file: <a href="static/PS/PS04.Rmd" download>`PS04.Rmd`</a>.
+* You will be submitting the resulting `PS04.pdf` file on gradescope. Please use the "Knit to PDF" method directly, instead of "Knit to Word" and then save to PDF method.
+* Complete the individual questions. Knit early, knit often.
+* If you encounter issues knitting your document, consult the [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"}.
+* Submit on [gradescope](https://www.gradescope.com/courses/308310){target="_blank"}:
+    1. Anytime between Wed 10/13 8pm and Mon 10/18 9pm
+    1. For each questions, tag **all** pages of your PDF that relate to that question (not just the first)
+    1. You will be asked to tag the honor code question as well.
+
+
+
+## 2. Solutions {#PS04_solutions}
+
+* <a href="static/PS/PS04_solutions.Rmd" download>`PS04_solutions.Rmd`</a> R Markdown "source code" 
+* [`PS04_solutions.pdf`](static/PS/PS04_solutions.pdf){target="_blank"} PDF
+
+
+
+
+
+***
+
+
+
+
+# Problem set 03 {#PS03}
+
+*Due Tuesday 9/28 9pm*
+
+## 1. R Markdown component {#PS03_R}
+
+* Download the following Rmd template file: <a href="static/PS/PS03.Rmd" download>`PS03.Rmd`</a>.
+* You will be submitting the resulting `PS03.pdf` file on gradescope. Please use the "Knit to PDF" method directly, instead of "Knit to Word" and then save to PDF method.
+* Complete the individual questions. Knit early, knit often.
+* If you encounter issues knitting your document, consult the [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"}.
+* Submit on [gradescope](https://www.gradescope.com/courses/308310){target="_blank"}:
+    1. Anytime between Mon 9/20 5pm and Tue 9/29 9pm
+    1. For each questions, tag **all** pages of your PDF that relate to that question (not just the first)
+    1. You will be asked to tag the honor code question as well.
+
+
+
+## 2. Solutions {#PS03_solutions}
+
+* <a href="static/PS/PS03_solutions.Rmd" download>`PS03_solutions.Rmd`</a> R Markdown "source code" 
+* [`PS03_solutions.pdf`](static/PS/PS03_solutions.pdf){target="_blank"} PDF
+
+
+
+
+***
+
+
+
+
+# Problem set 02 {#PS02}
+
+*Due Monday 9/20 5pm*
+
+## 1. R Markdown component {#PS02_R}
+
+* Download the following Rmd template file: <a href="static/PS/PS02.Rmd" download>`PS02.Rmd`</a>.
+* You will be submitting the resulting `PS02.pdf` file on gradescope. There are two methods to create a PDF:
+    1. "Knit to PDF". This is the preferred format (for consistency for the graders). 
+    1. If this doesn't work for you, then "Knit to Word" and then export/save as PDF
+* Complete the individual questions. Knit early, knit often.
+* If you encounter issues knitting your document, consult the [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"}.
+* Submit on [gradescope](https://www.gradescope.com/courses/308310){target="_blank"}:
+    1. Anytime between Mon 9/13 5pm and Mon 9/20 5pm
+    1. For each questions, tag **all** pages of your PDF that relate to that question (not just the first)
+
+
+
+## 2. Solutions {#PS02_solutions}
+
+* <a href="static/PS/PS02_solutions.Rmd" download>`PS02_solutions.Rmd`</a> R Markdown "source code" 
+* [`PS02_solutions.pdf`](static/PS/PS02_solutions.pdf){target="_blank"} PDF
+
+
+
+***
+
+
+
+# Problem set 01 {#PS01}
+
+*Due Monday 9/13 5pm*
+
+1. If you haven't already, complete the [intro survey](https://docs.google.com/forms/d/e/1FAIpQLSdA6uWnig5oR3ITCsVBFDxC6IC5Nq1tYzo-atdChe8CVTTqag/viewform){target="_blank"} distributed on Friday.
+1. Complete a syllabus quiz.
+    + Open the following [Google Doc](https://docs.google.com/document/d/1WknUhbtDeTGw8vvO8ytTURkF1_72ve4UXF5-SPk5NO8/){target="_blank"} and in the menu bar click "File -> Make a copy..."
+    + Answer the questions based on information in the [syllabus](syllabus.html).
+1. Submit a PDF of your syllabus quiz responses on gradescope:
+    + Your gradescope account is based on your Smith, 5 College, or other official email.
+    + Create your account on gradescope via the email sent to you this morning. If you did not receive such an email, add yourself to the course using Entry Code: 6PNXZ5.
+    + Log into [gradescope](https://www.gradescope.com/courses/308310){target="_blank"} 
+    + **Added after lecture**: You can edit gradescope submissions as many times as you like before the due date/time.
+    + **Added after lecture**: You need to "tag" the 11 individual questions on whatever page(s) they are on (demo on Fri 9/10)
+    
+
+
+

@@ -2,5 +2,10 @@
 .Rhistory
 .RData
 .Ruserdata
-
-/.quarto/
+.sass-cache/*
+_site/*
+*_cache/
+*.DS_Store
+*_files/*
+.httr-oauth
+~$*.xlsx

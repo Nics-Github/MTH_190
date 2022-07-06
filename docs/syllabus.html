@@ -52,7 +52,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
-<body class="fullcontent">
+<body class="floating fullcontent">
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
@@ -66,10 +66,19 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="https://mdsr-book.github.io/mdsr2e/">MDSR</a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://moderndive.com/">ModernDive</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://moderndive.com/C-appendixC.html">Tips &amp; Tricks</a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./webpage.html">GitHub Website</a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./projects.html">Mini-Projects</a>
   </li>  
@@ -85,6 +94,34 @@
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc">
+<h2 id="toc-title">Class Days</h2>
+<ul>
+<li><a href="#basicinfo" class="nav-link active" data-scroll-target="#basicinfo">Basic information</a>
+<ul class="collapse">
+<li><a href="#work-life-balance" class="nav-link" data-scroll-target="#work-life-balance">Instructor work-life balance</a></li>
+</ul></li>
+<li><a href="#how-can-i-succeed-in-this-class" class="nav-link" data-scroll-target="#how-can-i-succeed-in-this-class">How can I succeed in this class?</a></li>
+<li><a href="#course-description-objectives" class="nav-link" data-scroll-target="#course-description-objectives">Course Description &amp; Objectives</a></li>
+<li><a href="#topicschedule" class="nav-link" data-scroll-target="#topicschedule">Lecture schedule</a>
+<ul class="collapse">
+<li><a href="#policies" class="nav-link" data-scroll-target="#policies">Class norms</a></li>
+</ul></li>
+<li><a href="#evaluation" class="nav-link" data-scroll-target="#evaluation">Evaluation</a>
+<ul class="collapse">
+<li><a href="#midterms-35" class="nav-link" data-scroll-target="#midterms-35">Midterms 35%</a></li>
+<li><a href="#three-mini-projects-30" class="nav-link" data-scroll-target="#three-mini-projects-30">Three mini-projects 30%</a></li>
+<li><a href="#final-project-20" class="nav-link" data-scroll-target="#final-project-20">Final project 20%</a></li>
+<li><a href="#problem-sets-10" class="nav-link" data-scroll-target="#problem-sets-10">Problem sets 10%</a></li>
+<li><a href="#engagement" class="nav-link" data-scroll-target="#engagement">Engagement 5%</a></li>
+<li><a href="#policies-1" class="nav-link" data-scroll-target="#policies-1">Policies</a></li>
+</ul></li>
+<li><a href="#accommodations" class="nav-link" data-scroll-target="#accommodations">Accommodations</a></li>
+<li><a href="#codeofconduct" class="nav-link" data-scroll-target="#codeofconduct">Code of Conduct</a></li>
+</ul>
+</nav>
+</nav>
 <!-- margin-sidebar -->
     
 <!-- main -->
@@ -92,6 +129,7 @@
 <header id="title-block-header" class="quarto-title-block default">
 
 <div class="quarto-title"><h1 class="title display-7">Syllabus</h1></div></header>
+
 <!--
 {target="_blank"}
 -->
@@ -101,14 +139,13 @@ h1{font-weight: 400;}
 <section id="basicinfo" class="level1">
 <h1>Basic information</h1>
 <ul>
-<li><strong>Course title:</strong> SDS 192 Introduction to Data Science</li>
-<li><strong>Instructor:</strong> <a href="https://rudeboybert.rbind.io/" target="_blank">Albert Y. Kim (he/him)</a> - Assistant Professor of Statistical &amp; Data Sciences. Please call me “Professor Kim”</li>
-<li><strong>Office location:</strong> McConnell Hall 215 (accessible from stairwell closest to Bass Hall)</li>
-<li><strong><del>Email:</del> Slack team</strong>: Click hashtag icon in navbar for the browser interface or use the <a href="https://slack.com/downloads/" target="_blank">desktop/mobile app</a>.</li>
+<li><strong>Course title:</strong> MTH 190: Introduction to Data Science</li>
+<li><strong>Instructor:</strong> <a href="https://rudeboybert.rbind.io/" target="_blank">Nicholas Schwab (he/him)</a> - Assistant Professor of Mathematics. Please call me “Professor Schwab”</li>
+<li><strong>Office location:</strong> Frost 362</li>
+<li><strong>Email:</strong> nschwab@hcc.edu</li>
 <li><strong>Meeting locations/times:</strong>
 <ul>
-<li>Section 01: MWF <del>10:50 AM</del> 10:55 AM - 12:05 PM / <del>McConnell 103</del> Stoddard G2</li>
-<li>Section 02: MWF 9:25 AM - 10:35 AM <del>10:40 AM</del> / Sabin-Reed 220</li>
+<li>MF: 11:00 AM - 12:15 PM / Kittredge Center 420</li>
 </ul></li>
 <li><strong>Getting help</strong>:
 <ul>
@@ -120,11 +157,13 @@ h1{font-weight: 400;}
 </ul></li>
 <li>Office hours:
 <ul>
-<li>Office hours times will change. The most up-to-date time and location (in-person or on Zoom) info will be posted in this <a href="https://calendar.google.com/calendar/embed?src=c_hoe7p7ku3rhppoot8e38mponpo%40group.calendar.google.com&amp;ctz=America%2FToronto" target="_blank">calendar</a>; click on individual entries to get the location. Before coming to office hours, please have your question ready on your computer.</li>
-<li>During virtual office hours, you can stay with your screen off and work or listen to other student’s questions. During in-person office hours, you can work in the nearby SDS student lounge in McConnell 209.</li>
+<li>Office hours:</li>
+<li>Slack:<br>
+</li>
+<li></li>
 <li>For personal/sensitive matters: Book an appointment here, where the location (Zoom or McConnell 215) is indicated in the calendar entry: <a href="https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE" target="_blank">bit.ly/meet_with_albert</a>. If none of the listed times work for you, please Slack me.</li>
 </ul></li>
-<li><a href="https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr" target="_blank">Data Research and Statistics Counselor</a> Osman Keshawarz</li>
+<li></li>
 </ul></li>
 </ul>
 <section id="work-life-balance" class="level2">
@@ -242,14 +281,14 @@ You'll take these midterms in Seelye Self-Scheduled Exam center between Friday a
 <ol type="1">
 <li><strong>Collaboration</strong>: While I encourage you to work with your peers for problem sets, you must submit your own answers and not simple rewordings of another’s work. Furthermore, all collaborations must be explicitly acknowledged in your submissions.</li>
 <li><strong>Honor Code</strong>: All your work must follow the <a href="https://www.smith.edu/sao/handbook/socialconduct/honorcode.php" target="_blank">Smith College Academic Honor Code Statement</a>; in particular all external sources must be cited in your submissions. <!--
-1. **Problem sets**:
-    + No extensions on problem sets. However, only top 5 out of 7 scores count for your grade.
-1. **Mini-projects**:
-    + Extensions only with a dean's note.
-1. **Midterms**:
-    + No make-up midterms will be allowed without a dean's note. 
-    + Timestamps for all midterms will be strictly enforced.
---></li>
+    1. **Problem sets**:
+        + No extensions on problem sets. However, only top 5 out of 7 scores count for your grade.
+    1. **Mini-projects**:
+        + Extensions only with a dean's note.
+    1. **Midterms**:
+        + No make-up midterms will be allowed without a dean's note. 
+        + Timestamps for all midterms will be strictly enforced.
+    --></li>
 <li><strong>Grading</strong>: I reserve the right to not discuss any grading issues in class and instead direct you to office hours.</li>
 </ol>
 <hr>

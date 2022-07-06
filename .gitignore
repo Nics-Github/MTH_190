@@ -9,3 +9,5 @@ _site/*
 *_files/*
 .httr-oauth
 ~$*.xlsx
+
+/.quarto/

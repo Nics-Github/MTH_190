@@ -1,6 +1,0 @@
----
-title: "List of Assignments"
-author: "Schwab"
----
-
-This is a list of assignments.

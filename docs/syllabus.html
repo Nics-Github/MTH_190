@@ -1,372 +1,104 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="generator" content="quarto-0.9.80">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>MTH_190 - Syllabus</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
 
-<html>
-
-<head>
-
-<meta charset="utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-
-
-
-
-<title>Syllabus</title>
-
-<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<style>h1 {font-size: 34px;}
-       h1.title {font-size: 38px;}
-       h2 {font-size: 30px;}
-       h3 {font-size: 24px;}
-       h4 {font-size: 18px;}
-       h5 {font-size: 16px;}
-       h6 {font-size: 12px;}
-       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
-       pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
-<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-<link rel="shortcut icon" href="static/images/192.png">
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
-
-
-
-
-
-
-
-
-
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
-}
-pre code {
-  padding: 0;
-}
-</style>
-
-
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
-
-<!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
-<!-- code folding -->
-
-
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-.tocify-subheader {
-  display: inline;
-}
-.tocify-subheader .tocify-item {
-  font-size: 0.95em;
-}
-
-</style>
-
-
-
+  <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+  <script src="site_libs/quarto-nav/headroom.min.js"></script>
+  <script src="site_libs/clipboard/clipboard.min.js"></script>
+  <meta name="quarto:offset" content="./">
+  <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+  <script src="site_libs/quarto-search/fuse.min.js"></script>
+  <script src="site_libs/quarto-search/quarto-search.js"></script>
+  <script src="site_libs/quarto-html/quarto.js"></script>
+  <script src="site_libs/quarto-html/popper.min.js"></script>
+  <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+  <script src="site_libs/quarto-html/anchor.min.js"></script>
+  <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+  <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+  <script src="site_libs/bootstrap/bootstrap.min.js"></script>
+  <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+  <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <script id="quarto-search-options" type="application/json">{
+    "location": "navbar",
+    "copy-button": false,
+    "collapse-after": 2,
+    "panel-placement": "end",
+    "type": "overlay",
+    "limit": 20,
+    "language": {
+      "search-no-results-text": "No results",
+      "search-matching-documents-text": "matching documents",
+      "search-copy-link-title": "Copy link to search",
+      "search-hide-matches-text": "Hide additional matches",
+      "search-more-match-text": "more match in this document",
+      "search-more-matches-text": "more matches in this document",
+      "search-clear-button-title": "Clear",
+      "search-detached-cancel-button-title": "Cancel",
+      "search-submit-button-title": "Submit"
+    }
+  }</script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
 </head>
-
-<body>
-
-
-<div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
-
-
-
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">SDS192</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li>
-  <a href="https://sds192-all-fall2021.slack.com">
-    <span class="fa fa-slack fa-lg"></span>
-     
+<body class="fullcontent">
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">MTH_190</span>
   </a>
-</li>
-<li>
-  <a href="https://moderndive.com/">ModernDive</a>
-</li>
-<li>
-  <a href="https://moderndive.com/C-appendixC.html">Tips &amp; Tricks</a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="PS.html">Problem Sets</a>
-</li>
-<li>
-  <a href="projects.html">Mini-Projects</a>
-</li>
-<li>
-  <a href="midterms.html">Midterms</a>
-</li>
-<li>
-  <a href="syllabus.html">Syllabus</a>
-</li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://moderndive.com/">ModernDive</a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./projects.html">Mini-Projects</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./syllabus.html" aria-current="page">Syllabus</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<header id="title-block-header" class="quarto-title-block default">
 
-<div id="header">
-
-
-
-<h1 class="title toc-ignore">Syllabus</h1>
-
-</div>
-
-
+<div class="quarto-title"><h1 class="title display-7">Syllabus</h1></div></header>
 <!--
 {target="_blank"}
 -->
 <style>
 h1{font-weight: 400;}
 </style>
-<div id="basicinfo" class="section level1">
+<section id="basicinfo" class="level1">
 <h1>Basic information</h1>
 <ul>
 <li><strong>Course title:</strong> SDS 192 Introduction to Data Science</li>
@@ -395,17 +127,17 @@ h1{font-weight: 400;}
 <li><a href="https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr" target="_blank">Data Research and Statistics Counselor</a> Osman Keshawarz</li>
 </ul></li>
 </ul>
-<div id="work-life-balance" class="section level2">
-<h2>Instructor work-life balance</h2>
+<section id="work-life-balance" class="level2">
+<h2 class="anchored" data-anchor-id="work-life-balance">Instructor work-life balance</h2>
 <ul>
 <li>I will respond to Slack messages sent during the week within 24h. I will respond to Slack messages sent during the weekend at my own discretion.</li>
 <li>If possible, please only Slack me with briefer and administrative questions; I prefer having more substantive conversations in person as it takes me less energy to understand where you are at.</li>
 <li>I will do my best to return all grading as promptly as possible.</li>
 </ul>
-<hr />
-</div>
-</div>
-<div id="how-can-i-succeed-in-this-class" class="section level1">
+<hr>
+</section>
+</section>
+<section id="how-can-i-succeed-in-this-class" class="level1">
 <h1>How can I succeed in this class?</h1>
 <p>Ask yourself:</p>
 <ul>
@@ -425,13 +157,13 @@ h1{font-weight: 400;}
 <li><em>“Have I been doing the associated readings for each lecture?”</em></li>
 </ul></li>
 </ul>
-<hr />
-</div>
-<div id="course-description-objectives" class="section level1">
+<hr>
+</section>
+<section id="course-description-objectives" class="level1">
 <h1>Course Description &amp; Objectives</h1>
 <p>From <a href="https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Fall+2019&amp;dept=&amp;instr=Albert+Y.+Kim&amp;credits=&amp;course_numb=192&amp;course_keywd=&amp;op=Submit&amp;form_build_id=form-V3WH-ixzbA-eyjFrRcImqp_C6DNgVUwcb_Pg8XhbUS8&amp;form_id=campus_course_search_basic_search_form" target="_blank">Smith College Course Search</a>: <em>An introduction to data science using Python, R and SQL. Students learn how to scrape, process and clean data from the web; manipulate data in a variety of formats; contextualize variation in data; construct point and interval estimates using resampling techniques; visualize multidimensional data; design accurate, clear and appropriate data graphics; create data maps and perform basic spatial analysis; and query large relational databases. No prerequisites, but a willingness to write code is necessary.</em></p>
 <p>On top of the goals of the above description, this semester you will:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Equip yourselves with the data science tools necessarily to perform effective <em>exploratory data analysis</em>.</li>
 <li>Learn about project workflows such as
 <ul>
@@ -440,13 +172,13 @@ h1{font-weight: 400;}
 </ul></li>
 <li>Learn how to use internet search engines effectively in a data science setting.</li>
 </ol>
-<hr />
-</div>
-<div id="topicschedule" class="section level1">
+<hr>
+</section>
+<section id="topicschedule" class="level1">
 <h1>Lecture schedule</h1>
 <p>The lecture schedule and associated readings can be found on the <a href="index.html" target="_blank">main page</a> of this course webpage. The ModernDive textbook is accessible on the navigational bar of this webpage.</p>
-<div id="policies" class="section level2">
-<h2>Class norms</h2>
+<section id="policies" class="level2">
+<h2 class="anchored" data-anchor-id="policies">Class norms</h2>
 <ul>
 <li>Bring your laptop, a set of headphones, colored pens/pencils with paper notebook (or tablet with stylus) to every lecture.</li>
 <li>You are expected to stay until the end of lecture. If you need to leave early, please confirm with me at the beginning of lecture and sit somewhere where your departure will be minimally disruptive.</li>
@@ -454,14 +186,14 @@ h1{font-weight: 400;}
 <li>However, you are responsible for asking your peers for what you missed. For example, makeup lectures will not be held during office hours.</li>
 <li>Lecture will be held as usual on Monday 11/22 (before Thanksgiving).</li>
 </ul>
-<hr />
-</div>
-</div>
-<div id="evaluation" class="section level1">
+<hr>
+</section>
+</section>
+<section id="evaluation" class="level1">
 <h1>Evaluation</h1>
 <p>All due dates can be found on the <a href="index.html" target="_blank">main page</a> of this course webpage.</p>
-<div id="midterms-35" class="section level2">
-<h2>Midterms 35%</h2>
+<section id="midterms-35" class="level2">
+<h2 class="anchored" data-anchor-id="midterms-35">Midterms 35%</h2>
 <p>There will be two midterms during the semester. The higher score of the two midterm scores will be weighted 20% and the lower will be weighted 15%. More details to follow.</p>
 <!--
 You'll take these midterms in Seelye Self-Scheduled Exam center between Friday at 5pm and Sunday at 11:55pm. Instructions on taking exams for [Smithies](https://sophia.smith.edu/edtech/documentation/print-an-exam-from-the-direct-to-queue-application/){target="_blank"} and [Five College Students](https://sophia.smith.edu/edtech/documentation/special-instructions-for-five-college-and-high-school-students-using-direct-to-queue-exam-printing/){target="_blank"}.
@@ -469,23 +201,23 @@ You'll take these midterms in Seelye Self-Scheduled Exam center between Friday a
 * Midterm I: Data visualization
 * Midterm II: Data wrangling
 -->
-</div>
-<div id="three-mini-projects-30" class="section level2">
-<h2>Three mini-projects 30%</h2>
+</section>
+<section id="three-mini-projects-30" class="level2">
+<h2 class="anchored" data-anchor-id="three-mini-projects-30">Three mini-projects 30%</h2>
 <p>There will be three mini-projects with particular themes. You’ll do these mini-projects in groups of 2 assigned by me.</p>
 <ul>
 <li>Mini-project 1 5%: Data visualization</li>
 <li>Mini-project 2 10%: Data wrangling</li>
 <li>Mini-project 3 15%: Maps</li>
 </ul>
-</div>
-<div id="final-project-20" class="section level2">
-<h2>Final project 20%</h2>
+</section>
+<section id="final-project-20" class="level2">
+<h2 class="anchored" data-anchor-id="final-project-20">Final project 20%</h2>
 <p>There will be a final project due the last day of exams. You’ll do this final project in groups of 2-3 where you can choose your groupmates.</p>
 <p>As for whether you should be on Smith campus during exam week, this is for you and your groupmates to decide. You do not need to consult the instructor.</p>
-</div>
-<div id="problem-sets-10" class="section level2">
-<h2>Problem sets 10%</h2>
+</section>
+<section id="problem-sets-10" class="level2">
+<h2 class="anchored" data-anchor-id="problem-sets-10">Problem sets 10%</h2>
 <p>There will be 7 problem sets, with only the top 5 scores going towards your grade. <del>Since the lowest two grades will be dropped, no extensions to problem sets will be given.</del></p>
 <p><strong>Extension Requests (Added 10/27)</strong>:</p>
 <ul>
@@ -493,9 +225,9 @@ You'll take these midterms in Seelye Self-Scheduled Exam center between Friday a
 <li>Request must be made before due date/time.</li>
 <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeCrhqs-iTD5qPcf4FfcFNHE_rwMuaeF37yQuwusRsP9xHJ_Q/viewform" target="_blank">Google Form</a></li>
 </ul>
-</div>
-<div id="engagement" class="section level2">
-<h2>Engagement 5%</h2>
+</section>
+<section id="engagement" class="level2">
+<h2 class="anchored" data-anchor-id="engagement">Engagement 5%</h2>
 <p>It is difficult to explicit codify what constitutes “an engaged student,” so instead I present the following rough principle I will follow: <em>you’ll only get out of this class as much as you put in</em>. That being said, here are multiple pathways for you to stay engaged in this class:</p>
 <ul>
 <li>In particular: Peer evaluations for all projects.</li>
@@ -504,10 +236,10 @@ You'll take these midterms in Seelye Self-Scheduled Exam center between Friday a
 <li>Posting questions on Slack.</li>
 <li>Even better: Responding to questions on Slack.</li>
 </ul>
-</div>
-<div id="policies-1" class="section level2">
-<h2>Policies</h2>
-<ol style="list-style-type: decimal">
+</section>
+<section id="policies-1" class="level2">
+<h2 class="anchored" data-anchor-id="policies-1">Policies</h2>
+<ol type="1">
 <li><strong>Collaboration</strong>: While I encourage you to work with your peers for problem sets, you must submit your own answers and not simple rewordings of another’s work. Furthermore, all collaborations must be explicitly acknowledged in your submissions.</li>
 <li><strong>Honor Code</strong>: All your work must follow the <a href="https://www.smith.edu/sao/handbook/socialconduct/honorcode.php" target="_blank">Smith College Academic Honor Code Statement</a>; in particular all external sources must be cited in your submissions. <!--
 1. **Problem sets**:
@@ -520,97 +252,101 @@ You'll take these midterms in Seelye Self-Scheduled Exam center between Friday a
 --></li>
 <li><strong>Grading</strong>: I reserve the right to not discuss any grading issues in class and instead direct you to office hours.</li>
 </ol>
-<hr />
-</div>
-</div>
-<div id="accommodations" class="section level1">
+<hr>
+</section>
+</section>
+<section id="accommodations" class="level1">
 <h1>Accommodations</h1>
 <p>Smith is committed to providing support services and reasonable accommodations to all students with disabilities. To request an accommodation, please register with the Disability Services Office at the beginning of the semester. To do so, call 413.585.2071 to arrange an appointment with Laura Rauscher, Director of Disability Services.</p>
-<hr />
-</div>
-<div id="codeofconduct" class="section level1">
+<hr>
+</section>
+<section id="codeofconduct" class="level1">
 <h1>Code of Conduct</h1>
 <p>As the instructor and assistants for this course, we are committed to making participation in this course a harassment-free experience for everyone, regardless of level of experience, gender, gender identity and expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, age, or religion. Examples of unacceptable behavior by participants in this course include the use of sexual language or imagery, derogatory comments or personal attacks, trolling, public or private harassment, insults, or other unprofessional conduct.</p>
 <p>As the instructor and assistants we have the right and responsibility to point out and stop behavior that is not aligned to this Code of Conduct. Participants who do not follow the Code of Conduct may be reprimanded for such behavior. Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the instructor.</p>
 <p><strong>All students, the instructor, the lab instructor, and all data assistants are expected to adhere to this Code of Conduct in all settings for this course: lectures, office hours, tutoring hours, and over Slack.</strong></p>
 <p>This Code of Conduct is adapted from the <a href="http://contributor-covenant.org" target="_blank">Contributor Covenant</a>, version 1.0.0, available <a href="http://contributor-covenant.org/version/1/0/0/" target="_blank">here</a>.</p>
-</div>
 
 
-
-</div>
-</div>
-
-</div>
-
-<script>
-
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
-
-
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open');
+</section>
+</main> <!-- /main -->
+<script type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
   });
-});
-</script>
-
-<!-- code folding -->
-
-<script>
-$(document).ready(function ()  {
-
-    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
-    $('.unlisted.unnumbered').addClass('toc-ignore')
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    setTimeout(function() {
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
       },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
     };
-    options.showAndHide = false;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
 });
 </script>
+</div> <!-- /content -->
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 
-</body>
-</html>
+</body></html>

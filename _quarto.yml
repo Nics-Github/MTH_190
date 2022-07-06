@@ -1,10 +1,16 @@
-name: MTH 190
-output_dir: docs
+# name: MTH 190
+# output_dir: docs
 # This format was borrowed from Albert Kim's SDS 192 course
 # https://github.com/rudeboybert/SDS192
+
 # The website theme was chosen from
 # https://rmarkdown.rstudio.com/html_document_format#appearance_and_style
+project:
+  type: website
+  output-dir: docs
+  
 
+  
 output:
   html_document:
     toc: yes
@@ -18,58 +24,59 @@ output:
     includes:
       in_header: "favicon.html"
 # All icons were obtained from https://fontawesome.com/icons?d=gallery
-navbar:
-  title: SDS192
-  left:
-  - icon: fa-slack fa-lg
-    href: https://sds192-all-fall2021.slack.com
-  - text: ModernDive
-    href: https://moderndive.com/
-  - text: Tips & Tricks
-    href: https://moderndive.com/C-appendixC.html
-  right:
-#  - text: GitHub Website
-#    href: webpage.html
-  - text: Problem Sets
-    href: PS.html
-  - text: Mini-Projects
-    href: projects.html
-  - text: Midterms
-    href: midterms.html
-  - text: Syllabus
-    href: syllabus.html
-#  - icon: fa-github fa-lg
-#    href: https://github.com/rudeboybert/SDS192
-
-project:
-  type: website
-
-website:
+website:   
   title: "MTH_190"
   navbar:
-    background: primary
+ 
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-      - assignments.qmd
-       
-    
-    sidebar:
-    - id: Day_1
-      title: "Day_1"
-      style: "floating"
-      collapse-level: 2
-      align: left
-      contents:
-        - href: Day_1.qmd
-        
+    # - icon: fa-slack fa-lg
+    #   href: https://sds192-all-fall2021.slack.com
+    - text: ModernDive
+      href: https://moderndive.com/
+  # - text: Tips & Tricks
+  #   href: https://moderndive.com/C-appendixC.html
+    right:
+  # - text: GitHub Website
+  #   href: webpage.html
+  # - text: Problem Sets
+  #   href: PS.html
+    - text: Mini-Projects
+      href: projects.html
+  # - text: Midterms
+  #   href: midterms.html
+    - text: Syllabus
+      href: syllabus.html
+  #  - icon: fa-github fa-lg
+  #    href: https://github.com/rudeboybert/SDS192
 
 
-format:
-  html:
-    theme: cosmo
-    css: styles.css
 
-editor: visual
+# website:
+#   title: "MTH_190"
+#   navbar:
+#     background: primary
+#     left:
+#       - href: index.qmd
+#         text: Home
+#       - about.qmd
+#       - assignments.qmd
+#        
+#     
+#     sidebar:
+#     - id: Day_1
+#       title: "Day_1"
+#       style: "floating"
+#       collapse-level: 2
+#       align: left
+#       contents:
+#         - href: Day_1.qmd
+#         
+# 
+# 
+# format:
+#   html:
+#     theme: cosmo
+#     css: styles.css
+# 
+# editor: visual
 

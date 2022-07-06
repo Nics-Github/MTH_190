@@ -1,469 +1,176 @@
 <!DOCTYPE html>
-
-<html>
-
-<head>
-
-<meta charset="utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-
-
-
-
-<title>Mini Projects</title>
-
-<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<style>h1 {font-size: 34px;}
-       h1.title {font-size: 38px;}
-       h2 {font-size: 30px;}
-       h3 {font-size: 24px;}
-       h4 {font-size: 18px;}
-       h5 {font-size: 16px;}
-       h6 {font-size: 12px;}
-       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
-       pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
-<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-<link rel="shortcut icon" href="static/images/192.png">
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
-
-
-
-<style type="text/css">
-  code {
-    white-space: pre;
-  }
-  .sourceCode {
-    overflow: visible;
-  }
-</style>
-<style type="text/css" data-origin="pandoc">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  background-color: #f8f8f8; }
-@media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ef2929; } /* Alert */
-code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
-code span.bn { color: #0000cf; } /* BaseN */
-code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
-code span.co { color: #8f5902; font-style: italic; } /* Comment */
-code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
-code span.dt { color: #204a87; } /* DataType */
-code span.dv { color: #0000cf; } /* DecVal */
-code span.er { color: #a40000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
-code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
-code span.ot { color: #8f5902; } /* Other */
-code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
-code span.ss { color: #4e9a06; } /* SpecialString */
-code span.st { color: #4e9a06; } /* String */
-code span.va { color: #000000; } /* Variable */
-code span.vs { color: #4e9a06; } /* VerbatimString */
-code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-
-</style>
-<script>
-// apply pandoc div.sourceCode style to pre.sourceCode instead
-(function() {
-  var sheets = document.styleSheets;
-  for (var i = 0; i < sheets.length; i++) {
-    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
-    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
-    for (var j = 0; j < rules.length; j++) {
-      var rule = rules[j];
-      // check if there is a div.sourceCode rule
-      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
-      var style = rule.style.cssText;
-      // check if color or background-color is set
-      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
-      // replace div.sourceCode by a pre.sourceCode rule
-      sheets[i].deleteRule(j);
-      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="generator" content="quarto-0.9.80">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>MTH_190 - Mini Projects</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
     }
-  }
-})();
-</script>
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
 
-
-
-
-
-
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
-}
-pre code {
-  padding: 0;
-}
-</style>
-
-
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
-
-<!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
-<!-- code folding -->
-
-
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
-
+  <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+  <script src="site_libs/quarto-nav/headroom.min.js"></script>
+  <script src="site_libs/clipboard/clipboard.min.js"></script>
+  <meta name="quarto:offset" content="./">
+  <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+  <script src="site_libs/quarto-search/fuse.min.js"></script>
+  <script src="site_libs/quarto-search/quarto-search.js"></script>
+  <script src="site_libs/quarto-html/quarto.js"></script>
+  <script src="site_libs/quarto-html/popper.min.js"></script>
+  <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+  <script src="site_libs/quarto-html/anchor.min.js"></script>
+  <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+  <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+  <script src="site_libs/bootstrap/bootstrap.min.js"></script>
+  <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+  <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <script id="quarto-search-options" type="application/json">{
+    "location": "navbar",
+    "copy-button": false,
+    "collapse-after": 2,
+    "panel-placement": "end",
+    "type": "overlay",
+    "limit": 20,
+    "language": {
+      "search-no-results-text": "No results",
+      "search-matching-documents-text": "matching documents",
+      "search-copy-link-title": "Copy link to search",
+      "search-hide-matches-text": "Hide additional matches",
+      "search-more-match-text": "more match in this document",
+      "search-more-matches-text": "more matches in this document",
+      "search-clear-button-title": "Clear",
+      "search-detached-cancel-button-title": "Cancel",
+      "search-submit-button-title": "Submit"
+    }
+  }</script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
 </head>
-
-<body>
-
-
-<div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
-
-
-
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">SDS192</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li>
-  <a href="https://sds192-all-fall2021.slack.com">
-    <span class="fa fa-slack fa-lg"></span>
-     
+<body class="fullcontent">
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">MTH_190</span>
   </a>
-</li>
-<li>
-  <a href="https://moderndive.com/">ModernDive</a>
-</li>
-<li>
-  <a href="https://moderndive.com/C-appendixC.html">Tips &amp; Tricks</a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="PS.html">Problem Sets</a>
-</li>
-<li>
-  <a href="projects.html">Mini-Projects</a>
-</li>
-<li>
-  <a href="midterms.html">Midterms</a>
-</li>
-<li>
-  <a href="syllabus.html">Syllabus</a>
-</li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://moderndive.com/">ModernDive</a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./projects.html" aria-current="page">Mini-Projects</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./syllabus.html">Syllabus</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<header id="title-block-header" class="quarto-title-block default">
 
-<div id="header">
-
-
-
-<h1 class="title toc-ignore">Mini Projects</h1>
-
-</div>
-
-
+<div class="quarto-title"><h1 class="title display-7">Mini Projects</h1></div></header>
 <!--
 {target="_blank"}
 -->
 <style>
 h1{font-weight: 400;}
 </style>
-<div id="extension-requests" class="section level1">
+<section id="extension-requests" class="level1">
 <h1>Extension Requests</h1>
 <ul>
 <li>You have an extension “budget” of a maximum of 5 days for the rest of the semester; it’s up to you to keep track of your budget</li>
 <li>Request must be made before due date/time.</li>
 <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeCrhqs-iTD5qPcf4FfcFNHE_rwMuaeF37yQuwusRsP9xHJ_Q/viewform" target="_blank">Google Form</a></li>
 </ul>
-<hr />
-</div>
-<div id="MP1" class="section level1">
+<hr>
+</section>
+<section id="MP1" class="level1">
 <h1>Mini-Project 1</h1>
 <!--
 
@@ -484,10 +191,18 @@ Things to remember for next time:
 
 -->
 <p><em>Due Wednesday 10/13 at 9pm.</em></p>
-<p><img src="static/images/google_calendar.png" width="960" style="display: block; margin: auto;" /></p>
-<div id="basic-outline" class="section level2">
-<h2>Basic outline</h2>
-<ol style="list-style-type: decimal">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="static/images/google_calendar.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="basic-outline" class="level2">
+<h2 class="anchored" data-anchor-id="basic-outline">Basic outline</h2>
+<ol type="1">
 <li>Identify a question about how you use your time <em>that you feel comfortable sharing with your partner and me</em>.</li>
 <li>Start the data collection process: start logging time in Google Calendar, macOS Calendar, or Outlook.</li>
 <li>Export the calendar to <code>.ics</code> file format and then import into R.
@@ -504,21 +219,21 @@ Things to remember for next time:
 </ul></li>
 </ol>
 <center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vLlR4lBWAoc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vLlR4lBWAoc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
 </iframe>
 </center>
-</div>
-<div id="steps" class="section level2">
-<h2>Steps</h2>
-<div id="getting-started" class="section level3">
-<h3>1. Getting started</h3>
+</section>
+<section id="steps" class="level2">
+<h2 class="anchored" data-anchor-id="steps">Steps</h2>
+<section id="getting-started" class="level3">
+<h3 class="anchored" data-anchor-id="getting-started">1. Getting started</h3>
 <ul>
 <li>Find your group in the <code>#mp1</code> channel. Please identify:
 <ul>
 <li>Your group number</li>
 <li>Who your group leader is: whoever in your group is listed as <code>member_1</code></li>
 </ul></li>
-<li>Download <a href="static/projects/MP1/MP1.zip" download><code>MP1.zip</code></a> and double-click it to “unzip” it</li>
+<li>Download <a href="static/projects/MP1/MP1.zip" download=""><code>MP1.zip</code></a> and double-click it to “unzip” it</li>
 <li>Knit the <code>MP1.Rmd</code> file once and read it over</li>
 <li>Group leader only:
 <ul>
@@ -527,10 +242,18 @@ Things to remember for next time:
 <li>Share it with your partner so that you can both edit it</li>
 </ul></li>
 </ul>
+</section>
+<section id="suggestion-complete-your-minimally-viable-product" class="level3">
+<h3 class="anchored" data-anchor-id="suggestion-complete-your-minimally-viable-product">2. Suggestion: Complete your Minimally Viable Product</h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="static/images/MVP_2.png" class="img-fluid figure-img" width="443"></p>
+</figure>
 </div>
-<div id="suggestion-complete-your-minimally-viable-product" class="section level3">
-<h3>2. Suggestion: Complete your Minimally Viable Product</h3>
-<p><img src="static/images/MVP_2.png" width="443" style="display: block; margin: auto;" /></p>
+</div>
+</div>
 <p>IMO when working on any project</p>
 <ul>
 <li>Don’t try to do everything completely and perfectly from the beginning. This leads to perfectionist thinking, which leads to procrastination and “analysis paralysis.”</li>
@@ -541,20 +264,20 @@ Things to remember for next time:
 </ul></li>
 <li>Once you’re done your MVP, gather feedback on how your project works. Based on this feedback, then iterate and improve.</li>
 </ul>
-</div>
-<div id="submit-three-things" class="section level3">
-<h3>3. Submit three things</h3>
+</section>
+<section id="submit-three-things" class="level3">
+<h3 class="anchored" data-anchor-id="submit-three-things">3. Submit three things</h3>
 <p>There are three components to your grade:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Both group members: Submit the <code>MP1.pdf</code> of your analysis of your partner’s question on gradescope.</li>
 <li>Both group members: Fill out the peer evaluation <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6w4CC9-PrWrpupNfosQUBVoCWBihRwdezYb2jJEj7-kNdfg/viewform" target="_blank">Google Form</a></li>
 <li>Group leader only: Submit a PDF of your joint reflection piece on gradescope</li>
 </ol>
-</div>
-<div id="grades" class="section level3">
-<h3>4. Grades</h3>
+</section>
+<section id="grades" class="level3">
+<h3 class="anchored" data-anchor-id="grades">4. Grades</h3>
 <p>On Moodle where</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Analysis (gradescope):
 <ul>
 <li>Viz 1: 35%</li>
@@ -563,10 +286,10 @@ Things to remember for next time:
 <li>Joint reflection piece (gradescope): 25%</li>
 <li>Peer evaluation (Google Form): 5%</li>
 </ol>
-</div>
-</div>
-<div id="details" class="section level2">
-<h2>Details</h2>
+</section>
+</section>
+<section id="details" class="level2">
+<h2 class="anchored" data-anchor-id="details">Details</h2>
 <ul>
 <li>Has to involve intervals of time: a start time and end time. For example, not “I went to sleep at.” but “I slept during these times.”</li>
 <li>Enter in at least two types of activities in your calendar. This activity type becomes the summary categorical variable with two levels.</li>
@@ -575,10 +298,10 @@ Things to remember for next time:
 <li>How many much analysis? 5 sentences or less for analysis of each graph.</li>
 <li>You need to collect at least 10 days worth of data</li>
 </ul>
-<hr />
-</div>
-</div>
-<div id="MP2" class="section level1">
+<hr>
+</section>
+</section>
+<section id="MP2" class="level1">
 <h1>Mini-Project 2</h1>
 <!--
 Things to remember for next time:
@@ -592,30 +315,38 @@ Things to remember for next time:
 <p><em>Due Monday 11/1 at 9pm.</em></p>
 <p>Words of wisdom from Detective Lester Freamon from The Wire:</p>
 <center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z7M71wmwWRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z7M71wmwWRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
 </iframe>
 </center>
-<div id="basic-outline-1" class="section level2">
-<h2>Basic outline</h2>
+<section id="basic-outline-1" class="level2">
+<h2 class="anchored" data-anchor-id="basic-outline-1">Basic outline</h2>
 <p>The theme of your analysis will be <strong>follow the money</strong> as quoted in the video above. You will work with a partner to analyze Federal Election Commission data based on the 2016 federal election cycle, as provided by the Federal Election Commission. We’ll be accessing this data in the <code>fec16</code> package, which was developed by Prof Ben Baumer, Rana Gahwagy, Irene Ryan, and Marium A. Tapal from Smith College. Check out Marium’s poster from the <a href="https://ww2.amstat.org/meetings/wsds/2020/onlineprogram/AbstractDetails.cfm?AbstractID=309585" target="_blank">Women in Statistics and Data Science 2020 conference</a>:</p>
-<p><img src="static/projects/MP2/fec16.png" width="1314" style="display: block; margin: auto;" /></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="static/projects/MP2/fec16.png" class="img-fluid figure-img" width="1314"></p>
+</figure>
+</div>
+</div>
+</div>
 <p>Here are two <strong>randomly</strong> chosen examples to give a <strong>qualitative</strong> sense of the outcome, there are many ways to do this project.</p>
 <ul>
 <li><a href="static/projects/MP2/MP2_example_1.html" target="_blank">Example 1</a></li>
 <li><a href="static/projects/MP2/MP2_example_2.html" target="_blank">Example 2</a></li>
 </ul>
-</div>
-<div id="steps-1" class="section level2">
-<h2>Steps</h2>
-<div id="getting-started-1" class="section level3">
-<h3>1. Getting started</h3>
+</section>
+<section id="steps-1" class="level2">
+<h2 class="anchored" data-anchor-id="steps-1">Steps</h2>
+<section id="getting-started-1" class="level3">
+<h3 class="anchored" data-anchor-id="getting-started-1">1. Getting started</h3>
 <ul>
 <li>Find your group in the <code>#mp2</code> channel. Please identify:
 <ul>
 <li>Your group number</li>
 <li>Who your group leader is: whoever in your group is listed as <code>member_1</code></li>
 </ul></li>
-<li>Download <a href="static/projects/MP2/MP2.Rmd" download><code>MP2.Rmd</code></a></li>
+<li>Download <a href="./static/projects/MP2/MP2.html" download=""><code>MP2.Rmd</code></a></li>
 <li>Knit the <code>MP2.Rmd</code> file once and read it over</li>
 <li>Read the <code>fec16</code> <a href="static/projects/MP2/fec16.pdf" target="_blank">poster</a> Marium Tapal presented to get an overview of the package, especially the datasets: some include full data by default, others only include a sample for which if you want full data you need to download it from the web (this is because R packages have file size restrictions). See code below.</li>
 <li>This is A LOT of data; it will be easy to get lost
@@ -625,25 +356,27 @@ Things to remember for next time:
 <li>Start simple: Get that minimally viable first visualization done, then iteratively add complexity.</li>
 </ul></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(fec16)</span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># Look at help file</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a>?contributions</span>
-<span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="co"># By default the contributions data frame only contains the first 1000 rows:</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a>contributions</span>
-<span id="cb1-8"><a href="#cb1-8"></a></span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="co"># Download full contributions data from web and overwrite contributions using:</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="co"># read_all_*() function.</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a><span class="co"># You will need to install the usethis package for this line of code to work</span></span>
-<span id="cb1-12"><a href="#cb1-12"></a>contributions &lt;-<span class="st"> </span><span class="kw">read_all_contributions</span>()</span>
-<span id="cb1-13"><a href="#cb1-13"></a></span>
-<span id="cb1-14"><a href="#cb1-14"></a><span class="co"># Now contributions has full 516,394 rows</span></span>
-<span id="cb1-15"><a href="#cb1-15"></a>contributions</span></code></pre></div>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode" id="cb1"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fec16)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at help file</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>?contributions</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># By default the contributions data frame only contains the first 1000 rows:</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>contributions</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Download full contributions data from web and overwrite contributions using:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># read_all_*() function.</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># You will need to install the usethis package for this line of code to work</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>contributions <span class="ot">&lt;-</span> <span class="fu">read_all_contributions</span>()</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Now contributions has full 516,394 rows</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>contributions</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="grading" class="section level3">
-<h3>2. Grading</h3>
-<ol style="list-style-type: decimal">
+</section>
+<section id="grading" class="level3">
+<h3 class="anchored" data-anchor-id="grading">2. Grading</h3>
+<ol type="1">
 <li><strong>Baseline:</strong> Projects that do not satisfy all “baseline” criteria can expect to get a grade of less than 7/10.
 <ul>
 <li>All visualizations have appropriately labeled axes, legends, titles, etc. Such information gives the data’s context.</li>
@@ -654,7 +387,7 @@ Things to remember for next time:
 <li><strong>Minimally viable product:</strong> Grade 7/10
 <ul>
 <li>Satisfy all “baseline” criteria.</li>
-<li>Create one data visualization that “follows the money” i.e. involves campaign contributions and include a written analysis.</li>
+<li>Create one data visualization that “follows the money” i.e.&nbsp;involves campaign contributions and include a written analysis.</li>
 </ul></li>
 <li><strong>Due diligence:</strong> Grade 8/10
 <ul>
@@ -672,19 +405,19 @@ Things to remember for next time:
 <li>Written text does an exceptional job of not only addressing what money-driven effect on politics is being observed, but also attempts to address <em>why</em> this money-driven effect on politics is happening.</li>
 </ul></li>
 </ol>
-</div>
-<div id="what-to-submit" class="section level3">
-<h3>3. What to submit</h3>
+</section>
+<section id="what-to-submit" class="level3">
+<h3 class="anchored" data-anchor-id="what-to-submit">3. What to submit</h3>
 <p>There are two components to your grade:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Group leader only: Submit the <code>MP2.pdf</code> of your analysis on gradescope</li>
 <li>Both group members: Fill out the peer evaluation <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqF7w2Hb1o4e08oYSbndefg3kqHetKL-wLirhUMrfE7sYRuQ/viewform" target="_blank">Google Form</a></li>
 </ol>
-<hr />
-</div>
-</div>
-</div>
-<div id="MP3" class="section level1">
+<hr>
+</section>
+</section>
+</section>
+<section id="MP3" class="level1">
 <h1>Mini-Project 3</h1>
 <!--
 Things to remember for next time:
@@ -692,21 +425,29 @@ Things to remember for next time:
 - Give example of joining sf object with data frame in examples.Rmd to create choropleth map of external variable
 -->
 <p><em>Due Tuesday <del>11/23</del> 11/30 (after break) at 9pm.</em></p>
-<p><img src="static/images/NJ.png" width="932" style="display: block; margin: auto;" /></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="static/images/NJ.png" class="img-fluid figure-img" width="932"></p>
+</figure>
+</div>
+</div>
+</div>
 <p><em>Example map courtesy Brianna Mateo and Michel Ruiz Fuentes</em></p>
-<div id="basic-outline-2" class="section level2">
-<h2>Basic outline</h2>
+<section id="basic-outline-2" class="level2">
+<h2 class="anchored" data-anchor-id="basic-outline-2">Basic outline</h2>
 <p>Create maps using the <code>sf</code> package. Here are two <strong>randomly</strong> chosen examples to give a <strong>qualitative</strong> sense of the outcome.</p>
 <ul>
 <li><a href="static/projects/MP3/MP3_example_1.html" target="_blank">Example 1</a></li>
 <li><a href="static/projects/MP3/MP3_example_2.html" target="_blank">Example 2</a></li>
 </ul>
 <p>Note you do not need to submit a interactive map, just a static (non-interactive) map generated with the <code>sf</code> package. If you would like to learn how to make interactive maps on your own, check out the <a href="https://rstudio.github.io/leaflet/" target="_blank"><code>leaflet</code> package</a>.</p>
-</div>
-<div id="steps-2" class="section level2">
-<h2>Steps</h2>
-<div id="getting-started-2" class="section level3">
-<h3>1. Getting started</h3>
+</section>
+<section id="steps-2" class="level2">
+<h2 class="anchored" data-anchor-id="steps-2">Steps</h2>
+<section id="getting-started-2" class="level3">
+<h3 class="anchored" data-anchor-id="getting-started-2">1. Getting started</h3>
 <ul>
 <li>Find your group in the <code>#mp3</code> channel. Please identify:
 <ul>
@@ -715,23 +456,31 @@ Things to remember for next time:
 </ul></li>
 <li>Add the following to the folder that has your <code>MP3.Rproj</code> RStudio Project you created in <a href="index.html#Lec26">Lec26</a>:
 <ul>
-<li>Download <a href="static/projects/MP3/MP3.Rmd" download><code>MP3.Rmd</code></a> and add it to the above folder</li>
+<li>Download <a href="./static/projects/MP3/MP3.html" download=""><code>MP3.Rmd</code></a> and add it to the above folder</li>
 <li>In the above folder create a new directory called <code>data/</code></li>
-<li>Download <a href="static/projects/MP3/ma_cities.csv" download><code>ma_cities.csv</code></a> and add it to the <code>data/</code> folder</li>
+<li>Download <a href="static/projects/MP3/ma_cities.csv" download=""><code>ma_cities.csv</code></a> and add it to the <code>data/</code> folder</li>
 </ul></li>
 <li>Knit the <code>MP3.Rmd</code> file once and read it over</li>
 <li>Map making can get very complicated, so start simple. Get that minimally viable first visualization done, then iteratively add complexity.</li>
 </ul>
-<p><img src="static/images/MVP_2.png" width="443" style="display: block; margin: auto;" /></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="static/images/MVP_2.png" class="img-fluid figure-img" width="443"></p>
+</figure>
 </div>
-<div id="grading-1" class="section level3">
-<h3>2. Grading</h3>
-<ol style="list-style-type: decimal">
+</div>
+</div>
+</section>
+<section id="grading-1" class="level3">
+<h3 class="anchored" data-anchor-id="grading-1">2. Grading</h3>
+<ol type="1">
 <li><strong>Baseline:</strong> Projects that do not satisfy all “baseline” criteria can expect to get a grade of less than 8/10.
 <ul>
 <li><strong>This will be strictly evaluated</strong>: The <code>MP3.Rmd</code> R Markdown file must “knit” correctly when <em>someone else</em> knits it. This is known as producing <em>reproducible research</em>.</li>
 <li>Wherever possible, all maps have appropriately labeled axes, legends, and titles and all maps are mindful of the <a href="https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842" target="_blank">ink/information ratio</a>.</li>
-<li>From the report reader’s perspective, there should be no “superfluous” and non-informative output (e.g. instructions text). You must be empathetic to your reader, or your reader will just throw your report in the trash.</li>
+<li>From the report reader’s perspective, there should be no “superfluous” and non-informative output (e.g.&nbsp;instructions text). You must be empathetic to your reader, or your reader will just throw your report in the trash.</li>
 <li>You submit your peer evaluation.</li>
 </ul></li>
 <li><strong>Minimally viable product:</strong> Grade: 8/10.
@@ -759,34 +508,34 @@ Things to remember for next time:
 </ul></li>
 </ul></li>
 </ol>
-</div>
-<div id="what-to-submit-1" class="section level3">
-<h3>3. What to submit</h3>
+</section>
+<section id="what-to-submit-1" class="level3">
+<h3 class="anchored" data-anchor-id="what-to-submit-1">3. What to submit</h3>
 <p>There are two components to your grade:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Group leader only: Submit the <code>MP3.zip</code> file of your entire RStudio Project folder on <a href="https://moodle.smith.edu/course/view.php?id=42274" target="_blank">moodle</a>.</li>
 <li>Both group members: Fill out the peer evaluation <a href="https://docs.google.com/forms/d/e/1FAIpQLSdf2M_0oYOR8hwUgxoQFeMR5bKvz4FMZs7Z4k1L1uOy3e_dQw/viewform" target="_blank">Google Form</a></li>
 </ol>
-<hr />
-</div>
-</div>
-</div>
-<div id="Final" class="section level1">
+<hr>
+</section>
+</section>
+</section>
+<section id="Final" class="level1">
 <h1>Final Project</h1>
 <p><em>Assigned on Wed Dec 1, due Fri 12/17 at 2pm <del>9pm</del>.</em></p>
-<div id="basic-outline-3" class="section level2">
-<h2>Basic outline</h2>
+<section id="basic-outline-3" class="level2">
+<h2 class="anchored" data-anchor-id="basic-outline-3">Basic outline</h2>
 <p>Using an R Markdown website you will answer any scientific question of your choosing using data:</p>
 <ul>
 <li>Your website must at least have the following two pages:
 <ul>
 <li>An intro <code>index.html</code> page in blog-post style that summarizes your work. It should have
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>One visualization that best summarizes your work.</li>
 <li>No more than 200 words of text</li>
 </ol></li>
 <li>A second <code>more_info.html</code> page going more in-depth for people who want more details. In should have
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Between 2-3 more visualizations.</li>
 <li>No more than 500 words of text</li>
 </ol></li>
@@ -798,17 +547,17 @@ Things to remember for next time:
 </ul></li>
 </ul>
 <p>Here are some arbitrarily chosen examples. Note the topics covered this semester have shifted.</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><a href="https://ctimmons1.github.io/webpage/index.html" target="_blank">America’s Leaky Pipes: The Environmental Impact of Oil Pipeline Spills</a></li>
 <li><a href="https://estherrose21.github.io/webpage/index.html" target="_blank">💵The Gigantic Gender Pay Gap💵</a></li>
 <li><a href="https://jcflohr.github.io/final-project/index.html" target="_blank">Putting Food on the Table in 50 States</a></li>
 <li><a href="https://lepidopterane-atsmith.github.io/sds192fp/index.html" target="_blank">Who Are The Noisemakers? | Analyzing the Loudest Parties in NYC</a></li>
 <li><a href="https://loblatt.github.io/final_project_webpage/index.html" target="_blank">Bigfoot: True or Real?</a></li>
 </ol>
-</div>
-<div id="getting-started-3" class="section level2">
-<h2>Getting started</h2>
-<ol style="list-style-type: decimal">
+</section>
+<section id="getting-started-3" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started-3">Getting started</h2>
+<ol type="1">
 <li>Join <code>#final_project</code> Slack channel</li>
 <li>Create groups of 2-3 students from any section and post in Google Sheet in <code>#final_project</code> channel in Slack</li>
 <li>Finding data. This is often the hardest part of such projects and I suggest you <strong>do this as soon as possible</strong>
@@ -823,17 +572,17 @@ Things to remember for next time:
 </ul></li>
 </ul></li>
 <li>Setup the Final Project RStudio Project
-<ol style="list-style-type: decimal">
-<li>Download the following zip file: <a href="static/projects/final_project.zip" download><code>final_project.zip</code></a></li>
+<ol type="1">
+<li>Download the following zip file: <a href="static/projects/final_project.zip" download=""><code>final_project.zip</code></a></li>
 <li>Move <code>final_project.zip</code> to your SDS192 folder on your computer</li>
 <li>Unzip <code>final_project.zip</code>. Windows users: be sure to “Extract all”</li>
 <li>In the resulting <code>final_project</code> folder, double-click the RStudio Project <code>final_project.Rproj</code> icon to open in RStudio Project mode</li>
 </ol></li>
 </ol>
-</div>
-<div id="submitting-the-project" class="section level2">
-<h2>Submitting the project</h2>
-<ol style="list-style-type: decimal">
+</section>
+<section id="submitting-the-project" class="level2">
+<h2 class="anchored" data-anchor-id="submitting-the-project">Submitting the project</h2>
+<ol type="1">
 <li>Group leader only: Submit a <code>final_project.zip</code> file of your entire RStudio Project folder on <a href="https://moodle.smith.edu/course/view.php?id=42274" target="_blank">moodle</a>.</li>
 <li>All group members:
 <ul>
@@ -841,18 +590,18 @@ Things to remember for next time:
 <li>Fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcVrUjjPEAM587UKIG_T7Nv7vsb351lcWL8SLZUw3qJ9UWAA/closedform" target="_blank">exit survey</a> Google Form</li>
 </ul></li>
 </ol>
-</div>
-<div id="grading-rubric" class="section level2">
-<h2>Grading rubric</h2>
-<ol style="list-style-type: decimal">
+</section>
+<section id="grading-rubric" class="level2">
+<h2 class="anchored" data-anchor-id="grading-rubric">Grading rubric</h2>
+<ol type="1">
 <li><strong>Baseline:</strong> Projects that do not satisfy all “baseline” criteria can expect to get a grade of less than 8/10.
 <ul>
 <li>The RMarkdown Website must “build” correctly when someone else builds it. <em>This is known as producing reproducible research.</em></li>
-<li>Wherever possible, all visualizations have appropriately labeled axes, legends, titles, etc and are mindful of the <a href="https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842" target="_blank">ink/information ratio</a>.<br />
+<li>Wherever possible, all visualizations have appropriately labeled axes, legends, titles, etc and are mindful of the <a href="https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842" target="_blank">ink/information ratio</a>.<br>
 </li>
 <li>Your code is clean, commented, and well-indented.</li>
 <li>From the perspective of both the report reader and potential collaborators who might reproduce your work, no “superfluous” and non-informative inputs or outputs are included. <em>This is being mindful of the work you create for readers and collaborators, including future you.</em> Ex: Do not
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Include my original instructions in the report.</li>
 <li>Include “Data dumps” like showing all the contents of a 1000 row data frame.</li>
 <li>Submit files in your RStudio Project folder that aren’t relevant to your analysis.</li>
@@ -881,84 +630,88 @@ Things to remember for next time:
 <li>Impress me by using the tools you’ve learned this semester. Yes, this criteria is deliberately vague.</li>
 </ul></li>
 </ol>
-</div>
-</div>
 
 
-
-</div>
-</div>
-
-</div>
-
-<script>
-
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
-
-
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open');
+</section>
+</section>
+</main> <!-- /main -->
+<script type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
   });
-});
-</script>
-
-<!-- code folding -->
-
-<script>
-$(document).ready(function ()  {
-
-    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
-    $('.unlisted.unnumbered').addClass('toc-ignore')
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    setTimeout(function() {
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
       },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
     };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
 });
 </script>
+</div> <!-- /content -->
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 
-</body>
-</html>
+</body></html>

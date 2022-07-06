@@ -7,7 +7,6 @@ output: html_document
 
 ## R Markdown
 
-
 ```{r cars}
 library(ggplot2)
 library(dplyr)
@@ -44,34 +43,32 @@ fig_2_26  +
 colors()
 ```
 
-
 ```{r}
-library(ggplot2)
-library(dplyr)
-library(gapminder)
-
-# 1. Recreate plot from PS02 but with no color:
-gapminder_2007 <- gapminder %>% 
-  filter(year == 2007)
-
-# 1.a) Add LOESS smoother layer with geom_smooth()
-ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
-  geom_point() +
-  geom_smooth()
-
-# 1.b) Remove standard error bars
-ggplot(data = gapminder_2007, mxapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
-  geom_point() +
-  geom_smooth(se = FALSE)
-
-# 1.c) Change span of "smoothing" window by changing span = value. Try different values.
-ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
-  geom_point() +
-  geom_smooth(se = TRUE, span = 1.2)
-
-# 1.d) Force line to be straight. i.e. linear regression
-ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
-  geom_point() +
-  geom_smooth(method = "lm", se = FALSE)
+# library(ggplot2)
+# library(dplyr)
+# library(gapminder)
+# 
+# # 1. Recreate plot from PS02 but with no color:
+# gapminder_2007 <- gapminder %>% 
+#   filter(year == 2007)
+# 
+# # 1.a) Add LOESS smoother layer with geom_smooth()
+# ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+#   geom_point() +
+#   geom_smooth()
+# 
+# # 1.b) Remove standard error bars
+# ggplot(data = gapminder_2007, mxapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+#   geom_point() +
+#   geom_smooth(se = FALSE)
+# 
+# # 1.c) Change span of "smoothing" window by changing span = value. Try different values.
+# ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+#   geom_point() +
+#   geom_smooth(se = TRUE, span = 1.2)
+# 
+# # 1.d) Force line to be straight. i.e. linear regression
+# ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+#   geom_point() +
+#   geom_smooth(method = "lm", se = FALSE)
 ```
-

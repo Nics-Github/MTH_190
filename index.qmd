@@ -1,7 +1,7 @@
 ---
 title: "MTH 190: Intro to Data Science"
 author: "Nicholas Schwab"
-date: "Last updated on `r Sys.Date()`"
+date: " `r Sys.Date()`"
 output:
   html_document:
     toc: true
@@ -1608,8 +1608,8 @@ The format for this site was borrowed from [Albert Kim's SDS 192 course](https:/
 
 If not created by me or referred to in some other way the activities and projects for this course are from: 
 
--The above mentioned website
--[Data Science in a box.](https://datasciencebox.org/)
--[Ben Braumer's SDS 192 course page](https://beanumber.github.io/sds192/)
+  *The above mentioned website
+  *[Data Science in a box.](https://datasciencebox.org/)
+  *[Ben Braumer's SDS 192 course page](https://beanumber.github.io/sds192/)
 
 

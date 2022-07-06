@@ -1,17 +1,31 @@
 [
   {
-    "objectID": "index.html#site-credit",
-    "href": "index.html#site-credit",
+    "objectID": "index.html#course-website",
+    "href": "index.html#course-website",
     "title": "MTH 190: Intro to Data Science",
-    "section": "Site Credit",
-    "text": "Site Credit\nThe format for this site was borrowed from Albert Kim’s SDS 192 course"
+    "section": "Course website",
+    "text": "Course website"
   },
   {
-    "objectID": "index.html#activities-projects-etc.",
-    "href": "index.html#activities-projects-etc.",
+    "objectID": "index.html#rstudio",
+    "href": "index.html#rstudio",
     "title": "MTH 190: Intro to Data Science",
-    "section": "Activities, Projects, etc.",
-    "text": "Activities, Projects, etc.\nIf not created by me or referred to in some other way the activities and projects for this course are from:\n\nThe above mentioned website\nData Science in a box.\nBen Baumer’s SDS 192 course page"
+    "section": "RStudio:",
+    "text": "RStudio:\n\n\n\nHCC’s Rstudio Workbench\n\n\nTo sign in:\nusername: Your HCC email with @hcc.edu\npassword: Your hcc password"
+  },
+  {
+    "objectID": "index.html#day-1-activity",
+    "href": "index.html#day-1-activity",
+    "title": "MTH 190: Intro to Data Science",
+    "section": "Day 1 Activity:",
+    "text": "Day 1 Activity:\nUNvotes\nor\nCOVID-19"
+  },
+  {
+    "objectID": "index.html#about-me-and-you",
+    "href": "index.html#about-me-and-you",
+    "title": "MTH 190: Intro to Data Science",
+    "section": "About Me and you",
+    "text": "About Me and you"
   },
   {
     "objectID": "PS.html#edit-your-public-github-profile",
@@ -453,5 +467,47 @@
     "title": "Syllabus",
     "section": "Policies",
     "text": "Policies\n\nCollaboration: While I encourage you to work with your peers for problem sets, you must submit your own answers and not simple rewordings of another’s work. Furthermore, all collaborations must be explicitly acknowledged in your submissions.\nHonor Code: All your work must follow the Smith College Academic Honor Code Statement; in particular all external sources must be cited in your submissions. \nGrading: I reserve the right to not discuss any grading issues in class and instead direct you to office hours."
+  },
+  {
+    "objectID": "Resources.html#moderndive",
+    "href": "Resources.html#moderndive",
+    "title": "Resources",
+    "section": "ModernDive",
+    "text": "ModernDive"
+  },
+  {
+    "objectID": "Resources.html#data-science-in-a-box",
+    "href": "Resources.html#data-science-in-a-box",
+    "title": "Resources",
+    "section": "Data Science in a box",
+    "text": "Data Science in a box"
+  },
+  {
+    "objectID": "Resources.html#data-visualization-ggplot2",
+    "href": "Resources.html#data-visualization-ggplot2",
+    "title": "Resources",
+    "section": "Data Visualization: ggplot2",
+    "text": "Data Visualization: ggplot2"
+  },
+  {
+    "objectID": "Resources.html#data-transformation-dplyr",
+    "href": "Resources.html#data-transformation-dplyr",
+    "title": "Resources",
+    "section": "Data transformation: dplyr",
+    "text": "Data transformation: dplyr"
+  },
+  {
+    "objectID": "credits.html#site-credit",
+    "href": "credits.html#site-credit",
+    "title": "Credits",
+    "section": "Site Credit",
+    "text": "Site Credit\nThe format for this site was borrowed from [Albert Kim’s SDS 192 course](https://bit.ly/sds192kim)"
+  },
+  {
+    "objectID": "credits.html#activities-projects-etc.",
+    "href": "credits.html#activities-projects-etc.",
+    "title": "Credits",
+    "section": "Activities, Projects, etc.",
+    "text": "Activities, Projects, etc.\nIf not created by me or referred to in some other way the activities and projects for this course are from:\n\nThe above mentioned website\nData Science in a box.\nBen Baumer’s SDS 192 course page"
   }
 ]

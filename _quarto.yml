@@ -36,14 +36,14 @@ website:
     #   href: https://sds192-all-fall2021.slack.com
     - text: MDSR 
       href: https://mdsr-book.github.io/mdsr2e/
-    - text: ModernDive
-      href: https://moderndive.com/
+    - text: Resources
+      href: Resources.qmd
     - text: Tips & Tricks
       href: https://moderndive.com/C-appendixC.html
     
     right:
     - text: GitHub Website
-      href: webpage.html
+      href: https://github.com/Nics-Github/MTH_190
   # - text: Problem Sets
   #   href: PS.html
     - text: Mini-Projects
@@ -54,6 +54,11 @@ website:
       href: syllabus.qmd
   #  - icon: fa-github fa-lg
   #    href: https://github.com/rudeboybert/SDS192
+  
+  page-footer:
+    right: 
+    - text: credits
+      href: credits.qmd
 
-editor: visual 
+
 

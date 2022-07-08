@@ -1,4 +1,4 @@
-# HCC 190
+# MTH 190
 
 Source code to generate the course webpage for Holyoke Community College HCC 190: Introduction to Data Science <https://nics-github.github.io/MTH_190/>. Most of the content is in either:
 

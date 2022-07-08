@@ -25,7 +25,7 @@
     "href": "index.html#about-me-and-you",
     "title": "MTH 190: Intro to Data Science",
     "section": "About Me and you",
-    "text": "About Me and you"
+    "text": "About Me and you\nFigure out how to link a .qmd file from this site."
   },
   {
     "objectID": "PS.html#edit-your-public-github-profile",
@@ -509,5 +509,33 @@
     "title": "Credits",
     "section": "Activities, Projects, etc.",
     "text": "Activities, Projects, etc.\nIf not created by me or referred to in some other way the activities and projects for this course are from:\n\nThe above mentioned website\nData Science in a box.\nBen Baumer’s SDS 192 course page"
+  },
+  {
+    "objectID": "in_class_activities/covid.html#introduction",
+    "href": "in_class_activities/covid.html#introduction",
+    "title": "Cumulative deaths from COVID-19",
+    "section": "Introduction",
+    "text": "Introduction\nCountries around the world are responding to an outbreak of respiratory illness caused by a novel coronavirus, COVID-19. The outbreak first started in Wuhan, China, but cases have been identified in a growing number of other locations internationally, including the United States. In this report we explore how the trajectory of the cumulative deaths in a number of countries.\nThe data come from the coronavirus package, which pulls data from the Johns Hopkins University Center for Systems Science and Engineering (JHU CCSE) Coronavirus repository. The coronavirus package provides a tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic. The package is available on GitHub here and is updated daily.\nFor our analysis, in addition to the coronavirus package, we will use the following packages for data wrangling and visualisation.\n\ntidyverse for data wrangling and visualization\nlubridate package for handling dates\nglue package for constructing text strings\nscales package for formatting axis labels\nggrepel package for pretty printing of country labels\n\nWe will make use of the DT package for interactive display of tabular output in the Appendix.\n\nlibrary(coronavirus) # devtools::install_github(\"RamiKrispin/coronavirus\")\nlibrary(tidyverse)\nlibrary(lubridate)\nlibrary(glue)\nlibrary(scales)\nlibrary(ggrepel)\nlibrary(DT)"
+  },
+  {
+    "objectID": "in_class_activities/covid.html#data-prep",
+    "href": "in_class_activities/covid.html#data-prep",
+    "title": "Cumulative deaths from COVID-19",
+    "section": "Data prep",
+    "text": "Data prep\nThe data frame called coronavirus in the coronavirus package provides a daily summary of the Coronavirus (COVID-19) cases by country. Each row in the data frame represents a country (or, where relevant, state/province). A full list of the countries in the data frame is provided in the Appendix. Note that the data provided in this package provides daily number of deaths, confirmed cases, and recovered cases. For this report, we will focus on the deaths.\nWe will start by making our selection for the countries we want to explore.\n\ncountries <- c(\n  \"Mexico\",\n  \"US\",\n  \"Canada\"\n)\n\nIn the following code chunk we filter the data frame for deaths in the countries we specified above and calculate cumulative number of deaths. We will only visualise data since 10th confirmed death.\n\ncountry_data <- coronavirus %>%\n  # filter for deaths in countries of interest\n  filter(\n    type == \"death\",\n    country %in% countries\n  ) %>%\n  # fix county labels for pretty plotting\n  mutate(\n    country = case_when(\n      country == \"United Kingdom\" ~ \"UK\",\n      TRUE ~ country\n    )\n  ) %>%\n  # calculate number of total cases for each country and date\n  group_by(country, date) %>%\n  summarise(tot_cases = sum(cases)) %>%\n  # arrange by date in ascending order\n  arrange(date) %>%\n  # record daily cumulative cases as cumulative_cases\n  mutate(cumulative_cases = cumsum(tot_cases)) %>%\n  # only use days since the 10th confirmed death\n  filter(cumulative_cases > 9) %>%\n  # record days elapsed, end date, and end label\n  mutate(\n    days_elapsed = as.numeric(date - min(date)),\n    end_date     = if_else(date == max(date), TRUE, FALSE),\n    end_label    = if_else(end_date, country, NULL)\n  ) %>%\n  # ungroup\n  ungroup()\n\n`summarise()` has grouped output by 'country'. You can override using the\n`.groups` argument.\n\n\nWe also need to take a note of the “as of date” for the data so that we can properly label our visualisation.\n\nas_of_date <- country_data %>% \n  summarise(max(date)) %>% \n  pull()\n\nas_of_date_formatted <- glue(\"{wday(as_of_date, label = TRUE)}, {month(as_of_date, label = TRUE)} {day(as_of_date)}, {year(as_of_date)}\")\n\nThese data are as of Thu, Jun 23, 2022."
+  },
+  {
+    "objectID": "in_class_activities/covid.html#visualisation",
+    "href": "in_class_activities/covid.html#visualisation",
+    "title": "Cumulative deaths from COVID-19",
+    "section": "Visualisation",
+    "text": "Visualisation\nThe following visualisation shows the number of cumulative cases vs. days elapsed since the 10th confirmed death in each country. The time span plotted for each country varies since some countries started seeing (and reporting) deaths from COVID-19 much later than others.\n\nggplot(data = country_data,\n       mapping = aes(x = days_elapsed, \n                     y = cumulative_cases, \n                     color = country, \n                     label = end_label)) +\n  # represent cumulative cases with lines\n  geom_line(size = 0.7, alpha = 0.8) +\n  # add points to line endings\n  geom_point(data = country_data %>% filter(end_date)) +\n  # add country labels, nudged above the lines\n  geom_label_repel(nudge_y = 1, direction = \"y\", hjust = 1) + \n  # turn off legend\n  guides(color = \"none\") +\n  # use pretty colors\n  scale_color_viridis_d() +\n  # better formatting for y-axis\n  scale_y_continuous(labels = label_comma()) +\n  # use minimal theme\n  theme_minimal() +\n  # customize labels\n  labs(\n    x = \"Days since 10th confirmed death\",\n    y = \"Cumulative number of deaths\",\n    title = \"Cumulative deaths from COVID-19, selected countries\",\n    subtitle = glue(\"Data as of\", as_of_date_formatted, .sep = \" \"),\n    caption = \"Source: github.com/RamiKrispin/coronavirus\"\n  )"
+  },
+  {
+    "objectID": "in_class_activities/covid.html#appendix",
+    "href": "in_class_activities/covid.html#appendix",
+    "title": "Cumulative deaths from COVID-19",
+    "section": "Appendix",
+    "text": "Appendix\nA list of countries in the coronavirus data frame is provided below."
   }
 ]

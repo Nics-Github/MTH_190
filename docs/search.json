@@ -25,7 +25,7 @@
     "href": "index.html#about-me-and-you",
     "title": "MTH 190: Intro to Data Science",
     "section": "About Me and you",
-    "text": "About Me and you\nFigure out how to link a .qmd file from this site."
+    "text": "About Me and you"
   },
   {
     "objectID": "PS.html#edit-your-public-github-profile",
@@ -537,5 +537,19 @@
     "title": "Cumulative deaths from COVID-19",
     "section": "Appendix",
     "text": "Appendix\nA list of countries in the coronavirus data frame is provided below."
+  },
+  {
+    "objectID": "index.html#summarize-reading",
+    "href": "index.html#summarize-reading",
+    "title": "MTH 190: Intro to Data Science",
+    "section": "Summarize Reading",
+    "text": "Summarize Reading"
+  },
+  {
+    "objectID": "index.html#see-tips-tricks",
+    "href": "index.html#see-tips-tricks",
+    "title": "MTH 190: Intro to Data Science",
+    "section": "See Tips & Tricks:",
+    "text": "See Tips & Tricks:\nThe six-fixes\nHelp us help you: take screenshots of your screen.\n\nmacOS: Command+Shift+3 to take shot of whole screen, Command+Shift+4 to take subportion\nWindows: Shift-Windows Key-S and Snip & Sketch\n\nLecture"
   }
 ]

@@ -114,5 +114,3 @@ Help us help you: take screenshots of your screen.
 -   Windows: Shift-Windows Key-S and Snip & Sketch
 
 Lecture
-
-

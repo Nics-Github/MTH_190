@@ -107,10 +107,12 @@ or
 
 The six-fixes
 
-Take screenshots of your screen!
+Help us help you: take screenshots of your screen.
 
 -   macOS: Command+Shift+3 to take shot of whole screen, Command+Shift+4 to take subportion
 
 -   Windows: Shift-Windows Key-S and Snip & Sketch
 
 Lecture
+
+

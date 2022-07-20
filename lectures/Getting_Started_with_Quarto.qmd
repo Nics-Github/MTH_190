@@ -1,7 +1,15 @@
 ---
 title: "Getting_Started_with_Quarto"
 author: "Nic Schwab"
-format: html
+format:
+  html:
+    toc: true
+    toc-depth: 1
+    toc-float: true
+    toc-location: left
+    toc-title: ""
+    df-print: kable
+
 editor: visual
 ---
 

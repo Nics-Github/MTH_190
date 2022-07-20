@@ -11,7 +11,7 @@
     "href": "index.html#rstudio",
     "title": "MTH 190: Intro to Data Science",
     "section": "RStudio",
-    "text": "RStudio\n\n\n\nHCC’s Rstudio Workbench\n\n\nTo sign in:\nusername: Your HCC email with @hcc.edu\npassword: Your hcc password"
+    "text": "RStudio\n\n\n\n\n\nTo sign in:\n\nusername: Your HCC email with @hcc.edu\npassword: Your hcc password\n\nIntro to R"
   },
   {
     "objectID": "index.html#day-1-activity",
@@ -712,5 +712,33 @@
     "title": "Vizualization_taxonomy",
     "section": "##",
     "text": "##"
+  },
+  {
+    "objectID": "lectures/Getting_Started_with_Quarto.html#lets-make-something-together.",
+    "href": "lectures/Getting_Started_with_Quarto.html#lets-make-something-together.",
+    "title": "Intro to R and Quarto",
+    "section": "Lets make something together.",
+    "text": "Lets make something together."
+  },
+  {
+    "objectID": "lectures/Getting_Started_with_Quarto.html#in-the-upper-left",
+    "href": "lectures/Getting_Started_with_Quarto.html#in-the-upper-left",
+    "title": "Intro to R and Quarto",
+    "section": "In the upper left",
+    "text": "In the upper left"
+  },
+  {
+    "objectID": "index.html#activity",
+    "href": "index.html#activity",
+    "title": "MTH 190: Intro to Data Science",
+    "section": "Activity",
+    "text": "Activity\nUNvotes\nor\nCOVID-19"
+  },
+  {
+    "objectID": "lectures/Getting_Started_with_Quarto.html",
+    "href": "lectures/Getting_Started_with_Quarto.html",
+    "title": "Getting_Started_with_Quarto",
+    "section": "",
+    "text": "Open a new document\nIn the upper left:\n\n\n Quarto Document…\nchoose html\n\n\n\nThe ?\nHow to get more information on a dataset in R.\n\n?mtcars\n\n\n\nLoad the tidyverse\n\n\n\nBehold\n\n\nWhat is the tidyverse?\n\nlibrary(tidyverse)\n\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──\n✔ ggplot2 3.3.6     ✔ purrr   0.3.4\n✔ tibble  3.1.7     ✔ dplyr   1.0.9\n✔ tidyr   1.2.0     ✔ stringr 1.4.0\n✔ readr   2.1.2     ✔ forcats 0.5.1\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\n\nview(mtcars)\n\nWhy do we load the tidyverse?\n\n\nLet’s compare cylinders and gas mileage\n\nmtcars |>\n  ggplot(aes(mpg,cyl))+\n  geom_point()\n\n\n\n\nHow can we make this graph clearer?\n\n\nLet’s add another aesthetic, color:\n\nmtcars |>\n  ggplot(aes(mpg,cyl,color= am))+\n  geom_point() \n\n\n\n\n\n\nLet’s add a title and change the x and y axes labels.\n\nmtcars |>\n  ggplot(aes(mpg,cyl,color= factor(am)))+\n  geom_point()+\n  #scale_fill_brewer(palette = \"blues\") +\n  labs(title = \"Cylinders vs MPG\",x=\"Miles Per Gallon\",y=\"Cylinders\")\n\n\n\n\n\n\nEdit the legend\n\nmtcars |>\n  ggplot(aes(mpg,cyl,color= factor(am)))+\n  geom_point()+\n  scale_fill_brewer(palette = \"YlOrRd\") +\n  scale_color_discrete(name=\"Transmission Type\",\n                      breaks=c(\"0\",\"1\"),\n                      labels=c(\"automatic\",\"manual\"))+\n  labs(title = \"Cylinders vs MPG\",x=\"Miles Per Gallon\",y=\"Cylinders\")\n\n\n\n\n\n\nHow do you remember all of this?\n\nSave this file\nResources Tab"
   }
 ]

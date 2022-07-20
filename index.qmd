@@ -79,15 +79,17 @@ h1{font-weight: 400;}
 
 ## RStudio
 
-[![HCC's Rstudio Workbench](images/rstudio_logo.png){fig-align="left"}](http://hcc-rstudiosrv1.hcc.edu:8787/s/93126cfc78a31806f480a/auth-sign-in?appUri=%2F)
+[![](images/rstudio_logo.png){fig-align="left"}](http://hcc-rstudiosrv1.hcc.edu:8787/s/93126cfc78a31806f480a/auth-sign-in?appUri=%2F)
 
 To sign in:
 
-| username: Your HCC email with @hcc.edu
+-   username: Your HCC email with @hcc.edu
 
-| password: Your hcc password
+-   password: Your hcc password
 
-## Day 1 Activity
+[Intro to R](.\lectures\Getting_Started_with_Quarto.html)
+
+## Activity
 
 [UNvotes](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/application-exercises/ae-01a-un-votes/unvotes.qmd)
 
@@ -115,6 +117,4 @@ Help us help you: take screenshots of your screen.
 
 ## [Lecture on Taxonomy](.\lectures\mdsr_viz_1_taxonomy.html)
 
-
-
-***
+------------------------------------------------------------------------

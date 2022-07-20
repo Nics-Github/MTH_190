@@ -86,4 +86,4 @@ mtcars |>
 # How do you remember all of this?
 
 -   ![](/images/floppydisk.png)Save this file
--   [Resources Tab](.\docs\Resources.html)
+-   [Resources Tab](.\Resources.html)

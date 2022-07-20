@@ -77,7 +77,7 @@ h1{font-weight: 400;}
 
 ## [Course website](https://nics-github.github.io/MTH_190/)
 
-## RStudio:
+## RStudio
 
 [![HCC's Rstudio Workbench](images/rstudio_logo.png){fig-align="left"}](http://hcc-rstudiosrv1.hcc.edu:8787/s/93126cfc78a31806f480a/auth-sign-in?appUri=%2F)
 
@@ -87,7 +87,7 @@ To sign in:
 
 | password: Your hcc password
 
-## Day 1 Activity:
+## Day 1 Activity
 
 [UNvotes](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/application-exercises/ae-01a-un-votes/unvotes.qmd)
 
@@ -103,7 +103,7 @@ or
 
 ## Summarize Reading
 
-## See Tips & Tricks:
+## See Tips & Tricks
 
 The six-fixes
 
@@ -113,4 +113,8 @@ Help us help you: take screenshots of your screen.
 
 -   Windows: Shift-Windows Key-S and Snip & Sketch
 
-Lecture
+## [Lecture on Taxonomy](.\lectures\mdsr_viz_1_taxonomy.html)
+
+
+
+***

@@ -10,15 +10,15 @@
     "objectID": "index.html#rstudio",
     "href": "index.html#rstudio",
     "title": "MTH 190: Intro to Data Science",
-    "section": "RStudio:",
-    "text": "RStudio:\n\n\n\nHCC’s Rstudio Workbench\n\n\nTo sign in:\nusername: Your HCC email with @hcc.edu\npassword: Your hcc password"
+    "section": "RStudio",
+    "text": "RStudio\n\n\n\nHCC’s Rstudio Workbench\n\n\nTo sign in:\nusername: Your HCC email with @hcc.edu\npassword: Your hcc password"
   },
   {
     "objectID": "index.html#day-1-activity",
     "href": "index.html#day-1-activity",
     "title": "MTH 190: Intro to Data Science",
-    "section": "Day 1 Activity:",
-    "text": "Day 1 Activity:\nUNvotes\nor\nCOVID-19"
+    "section": "Day 1 Activity",
+    "text": "Day 1 Activity\nUNvotes\nor\nCOVID-19"
   },
   {
     "objectID": "index.html#about-me-and-you",
@@ -549,7 +549,168 @@
     "objectID": "index.html#see-tips-tricks",
     "href": "index.html#see-tips-tricks",
     "title": "MTH 190: Intro to Data Science",
-    "section": "See Tips & Tricks:",
-    "text": "See Tips & Tricks:\nThe six-fixes\nHelp us help you: take screenshots of your screen.\n\nmacOS: Command+Shift+3 to take shot of whole screen, Command+Shift+4 to take subportion\nWindows: Shift-Windows Key-S and Snip & Sketch\n\nLecture"
+    "section": "See Tips & Tricks",
+    "text": "See Tips & Tricks\nThe six-fixes\nHelp us help you: take screenshots of your screen.\n\nmacOS: Command+Shift+3 to take shot of whole screen, Command+Shift+4 to take subportion\nWindows: Shift-Windows Key-S and Snip & Sketch"
+  },
+  {
+    "objectID": "index.html#lecture-on-taxonomy",
+    "href": "index.html#lecture-on-taxonomy",
+    "title": "MTH 190: Intro to Data Science",
+    "section": "Lecture on Taxonomy",
+    "text": "Lecture on Taxonomy"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#borrowing-heavily-from-nathan-yau",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#borrowing-heavily-from-nathan-yau",
+    "title": "Vizualization_Taxonomy",
+    "section": "Borrowing heavily from Nathan Yau",
+    "text": "Borrowing heavily from Nathan Yau"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#section",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#section",
+    "title": "Vizualization_taxonomy",
+    "section": "##",
+    "text": "##"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#slide-2",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#slide-2",
+    "title": "mdsr_viz_1_taxonomy",
+    "section": "slide 2?",
+    "text": "slide 2?"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#elements-of-data-graphics",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#elements-of-data-graphics",
+    "title": "Vizualization_Taxonomy",
+    "section": "Elements of data graphics",
+    "text": "Elements of data graphics\n\nVisual cues\n\nposition, length, area, etc.\n\nCoordinate system\n\nhow are the data points organized?\n\nScale\n\nhow does distance translate into meaning?\n\nContext\n\nin relation to what?\n\nFaceting / small multiples"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#slide-4",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#slide-4",
+    "title": "mdsr_viz_1_taxonomy",
+    "section": "slide 4",
+    "text": "slide 4"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#slide-4-background-image-httpss-media-cache-ak0.pinimg.comoriginalsc24692c24692fd95dbfb89f772613a316a5405.png",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#slide-4-background-image-httpss-media-cache-ak0.pinimg.comoriginalsc24692c24692fd95dbfb89f772613a316a5405.png",
+    "title": "mdsr_viz_1_taxonomy",
+    "section": "slide 4 {background-image= https://s-media-cache-ak0.pinimg.com/originals/c2/46/92/c24692fd95dbfb89f772613a316a5405.png}",
+    "text": "slide 4 {background-image= https://s-media-cache-ak0.pinimg.com/originals/c2/46/92/c24692fd95dbfb89f772613a316a5405.png}"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#visual-cues",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#visual-cues",
+    "title": "mdsr_viz_1_taxonomy",
+    "section": "Visual cues",
+    "text": "Visual cues"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#background-imagehttpsi.pinimg.com736x908f12908f129be5844828110233b84056d9f2data-visualization-points.jpg-background-size-contain",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#background-imagehttpsi.pinimg.com736x908f12908f129be5844828110233b84056d9f2data-visualization-points.jpg-background-size-contain",
+    "title": "mdsr_viz_1_taxonomy",
+    "section": "{background-image=“https://i.pinimg.com/736x/90/8f/12/908f129be5844828110233b84056d9f2–data-visualization-points.jpg” background-size= contain}",
+    "text": "{background-image=“https://i.pinimg.com/736x/90/8f/12/908f129be5844828110233b84056d9f2–data-visualization-points.jpg” background-size= contain}"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#background-image-httpsi.pinimg.com736x86a49386a49342761ca36aeca5f8ee03c64867data-visualization-points.jpg-background-sizecontain",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#background-image-httpsi.pinimg.com736x86a49386a49342761ca36aeca5f8ee03c64867data-visualization-points.jpg-background-sizecontain",
+    "title": "mdsr_viz_1_taxonomy",
+    "section": "{background-image= “https://i.pinimg.com/736x/86/a4/93/86a49342761ca36aeca5f8ee03c64867–data-visualization-points.jpg” background-size=contain}",
+    "text": "{background-image= “https://i.pinimg.com/736x/86/a4/93/86a49342761ca36aeca5f8ee03c64867–data-visualization-points.jpg” background-size=contain}"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#vc",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#vc",
+    "title": "mdsr_viz_1_taxonomy",
+    "section": "VC",
+    "text": "VC"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#cs-background-imagehttpsi.pinimg.com736x908f12908f129be5844828110233b84056d9f2data-visualization-points.jpg-background-size-contain",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#cs-background-imagehttpsi.pinimg.com736x908f12908f129be5844828110233b84056d9f2data-visualization-points.jpg-background-size-contain",
+    "title": "mdsr_viz_1_taxonomy",
+    "section": "CS {background-image=“https://i.pinimg.com/736x/90/8f/12/908f129be5844828110233b84056d9f2–data-visualization-points.jpg” background-size= contain}",
+    "text": "CS {background-image=“https://i.pinimg.com/736x/90/8f/12/908f129be5844828110233b84056d9f2–data-visualization-points.jpg” background-size= contain}"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#s",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#s",
+    "title": "mdsr_viz_1_taxonomy",
+    "section": "S",
+    "text": "S"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#background-image-urlhttpsi.pinimg.com736x62c6ee62c6ee636c47dccad00e7e56c268c3bfdata-visualization-points.jpg-background-size-contain",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#background-image-urlhttpsi.pinimg.com736x62c6ee62c6ee636c47dccad00e7e56c268c3bfdata-visualization-points.jpg-background-size-contain",
+    "title": "mdsr_viz_1_taxonomy",
+    "section": "background-image: url(https://i.pinimg.com/736x/62/c6/ee/62c6ee636c47dccad00e7e56c268c3bf–data-visualization-points.jpg) background-size: contain",
+    "text": "background-image: url(https://i.pinimg.com/736x/62/c6/ee/62c6ee636c47dccad00e7e56c268c3bf–data-visualization-points.jpg) background-size: contain"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#big-idea",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#big-idea",
+    "title": "Vizualization_Taxonomy",
+    "section": "Big idea",
+    "text": "Big idea\nMapping variables to visual cues"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#perceptual-heirarchy",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#perceptual-heirarchy",
+    "title": "mdsr_viz_1_taxonomy",
+    "section": "Perceptual heirarchy",
+    "text": "Perceptual heirarchy\n.footnote[Yau, Data Points, 2013]"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#dos-and-donts",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#dos-and-donts",
+    "title": "Vizualization_Taxonomy",
+    "section": "Do’s and don’ts",
+    "text": "Do’s and don’ts\n\nDo: mind the perceptual heirarchy\n\nDon’t use color when length will suffice\nDon’t use pie charts!\n\nDon’t use redundant mappings unless you have a reason\nDo use context!\nDo match data dimensions to visual dimensions\n\nDon’t map area to a 1D quantity"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#read-more-about-this",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#read-more-about-this",
+    "title": "Vizualization_Taxonomy",
+    "section": "Read more about this!",
+    "text": "Read more about this!"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#two-recent-books",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#two-recent-books",
+    "title": "mdsr_viz_1_taxonomy",
+    "section": "Two recent books",
+    "text": "Two recent books\n.pull-left[ ]\n.pull-right[ ]"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#tuftes-mantra",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#tuftes-mantra",
+    "title": "Vizualization_Taxonomy",
+    "section": "Tufte’s mantra",
+    "text": "Tufte’s mantra"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#section-1",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#section-1",
+    "title": "Vizualization_taxonomy",
+    "section": "##",
+    "text": "##"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#section-2",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#section-2",
+    "title": "Vizualization_taxonomy",
+    "section": "##",
+    "text": "##"
+  },
+  {
+    "objectID": "lectures/mdsr_viz_1_taxonomy.html#section-3",
+    "href": "lectures/mdsr_viz_1_taxonomy.html#section-3",
+    "title": "Vizualization_taxonomy",
+    "section": "##",
+    "text": "##"
   }
 ]

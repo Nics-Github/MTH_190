@@ -46,8 +46,8 @@ website:
       href: https://github.com/Nics-Github/MTH_190
   # - text: Problem Sets
   #   href: PS.html
-    - text: Mini-Projects
-      href: projects.Rmd
+  #  - text: Mini-Projects
+  #    href: projects.Rmd
   # - text: Midterms
   #   href: midterms.html
     - text: Syllabus
@@ -59,6 +59,4 @@ website:
     right: 
     - text: credits
       href: credits.qmd
-
-
-
+      

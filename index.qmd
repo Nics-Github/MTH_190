@@ -12,7 +12,7 @@ format:
     toc-depth: 1
     toc-float: true
     toc-location: left
-    toc-title: "Class Days"
+    toc-title: ""
     df-print: kable
     
 body-footer: 
@@ -73,9 +73,30 @@ h1{font-weight: 400;}
 
 ------------------------------------------------------------------------
 
-# Day 1: Introduction to Class, Website, and RStudio
+# Day 2: A Taxonomy for Data Graphics
 
-## [Course website](https://nics-github.github.io/MTH_190/)
+## Summarize Reading
+
+## [See Tips & Tricks]()
+
+The six-fixes
+
+Help us help you: take screenshots of your screen.
+
+-   macOS: Command+Shift+3 to take shot of whole screen, Command+Shift+4 to take subportion
+
+-   Windows: Shift-Windows Key-S and Snip & Sketch
+
+## Taxonomy 
+
+[Lecture on Taxonomy](./course_materials/lectures/mdsr_viz_1_taxonomy.qmd)
+
+[Activity on Taxonomy](./course_materials/in_class_activities/Activity_Taxonomy_of_Graphics.qmd)
+
+
+------------------------------------------------------------------------
+
+# Day 1: Introduction to Class, Website, and RStudio
 
 ## RStudio
 
@@ -87,34 +108,28 @@ To sign in:
 
 -   password: Your hcc password
 
-[Intro to R](.\lectures\Getting_Started_with_Quarto.html)
+## Class work
+[Intro to R](./course_materials/lectures/Getting_Started_with_Quarto.Rmd)
 
 ## Activity
 
-[UNvotes](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/application-exercises/ae-01a-un-votes/unvotes.qmd)
+[UNvotes](./course_materials/application-exercises/ae-01a-un-votes/unvotes.qmd)
 
 or
 
-[COVID-19](https://github.com/rstudio-education/datascience-box/blob/master/course-materials/application-exercises/ae-01b-covid/covid.qmd)
+[COVID-19](./course_materials/application-exercises/ae-01b-covid/covid.qmd)
 
-## About Me and you
 
-------------------------------------------------------------------------
+## Homework
+[HW 1](./course_materials/hw-instructions/hw-01/hw-01-pet-names.Rmd)
 
-# Day 2: A Taxonomy for Data Graphics
 
-## Summarize Reading
+## Me and you
 
-## See Tips & Tricks
+## Reading 
+[Prolouge: Why data science? MDSR](https://mdsr-book.github.io/mdsr2e/ch-prologue.html)
 
-The six-fixes
 
-Help us help you: take screenshots of your screen.
 
--   macOS: Command+Shift+3 to take shot of whole screen, Command+Shift+4 to take subportion
-
--   Windows: Shift-Windows Key-S and Snip & Sketch
-
-## [Lecture on Taxonomy](.\lectures\mdsr_viz_1_taxonomy.html)
 
 ------------------------------------------------------------------------

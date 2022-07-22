@@ -116,7 +116,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
-<body class="fullcontent">
+<body class="floating fullcontent">
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
@@ -158,6 +158,21 @@
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc">
+<h2 id="toc-title">On this page</h2>
+<ul>
+<li><a href="#open-a-new-document" class="nav-link active" data-scroll-target="#open-a-new-document">Open a new document</a></li>
+<li><a href="#the" class="nav-link" data-scroll-target="#the">The <strong>?</strong></a></li>
+<li><a href="#load-the-tidyverse" class="nav-link" data-scroll-target="#load-the-tidyverse">Load the tidyverse</a></li>
+<li><a href="#lets-compare-cylinders-and-gas-mileage" class="nav-link" data-scroll-target="#lets-compare-cylinders-and-gas-mileage">Let’s compare cylinders and gas mileage</a></li>
+<li><a href="#lets-add-another-aesthetic-color" class="nav-link" data-scroll-target="#lets-add-another-aesthetic-color">Let’s add another aesthetic, color:</a></li>
+<li><a href="#lets-add-a-title-and-change-the-x-and-y-axes-labels." class="nav-link" data-scroll-target="#lets-add-a-title-and-change-the-x-and-y-axes-labels.">Let’s add a title and change the x and y axes labels.</a></li>
+<li><a href="#edit-the-legend" class="nav-link" data-scroll-target="#edit-the-legend"><span>Edit the legend</span></a></li>
+<li><a href="#how-do-you-remember-all-of-this" class="nav-link" data-scroll-target="#how-do-you-remember-all-of-this">How do you remember all of this?</a></li>
+</ul>
+</nav>
+</nav>
 <!-- margin-sidebar -->
     
 <!-- main -->
@@ -166,6 +181,7 @@
 
 
 <div class="quarto-title"><h1 class="title display-7">Getting_Started_with_Quarto</h1></div><div class="quarto-title-meta"><div><div class="quarto-title-meta-heading">Author</div><div class="quarto-title-meta-contents"><div class="quarto-title-authors"><p>Nic Schwab</p></div></div></div></div></header>
+
 <section id="open-a-new-document" class="level1">
 <h1>Open a new document</h1>
 <p>In the upper left:</p>
@@ -258,12 +274,27 @@
 <p><img src="Getting_Started_with_Quarto_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>Let’s Facet a bit</p>
+<div class="cell">
+<div class="sourceCode" id="cb9"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>mtcars <span class="sc">|&gt;</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(mpg,<span class="at">color=</span> <span class="fu">factor</span>(am)))<span class="sc">+</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()<span class="sc">+</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">rows=</span><span class="fu">vars</span>(cyl)) <span class="sc">+</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">"YlOrRd"</span>) <span class="sc">+</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_discrete</span>(<span class="at">name=</span><span class="st">"Transmission Type"</span>,</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>                      <span class="at">breaks=</span><span class="fu">c</span>(<span class="st">"0"</span>,<span class="st">"1"</span>),</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>                      <span class="at">labels=</span><span class="fu">c</span>(<span class="st">"automatic"</span>,<span class="st">"manual"</span>))<span class="sc">+</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Cylinders vs MPG"</span>,<span class="at">x=</span><span class="st">"Miles Per Gallon"</span>,<span class="at">y=</span><span class="st">"Cylinders"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Getting_Started_with_Quarto_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
 </section>
 <section id="how-do-you-remember-all-of-this" class="level1">
 <h1>How do you remember all of this?</h1>
 <ul>
 <li><img src="../images/floppydisk.png" class="img-fluid">Save this file</li>
-<li><a href=".\docs\Resources.html">Resources Tab</a></li>
+<li><a href=".\Resources.html">Resources Tab</a></li>
 </ul>
 
 

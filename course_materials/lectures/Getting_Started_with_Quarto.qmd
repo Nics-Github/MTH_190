@@ -82,6 +82,19 @@ mtcars |>
                       labels=c("automatic","manual"))+
   labs(title = "Cylinders vs MPG",x="Miles Per Gallon",y="Cylinders")
 ```
+Let's Facet a bit
+
+```{r}
+mtcars |>
+  ggplot(aes(mpg,color= factor(am)))+
+  geom_boxplot()+
+  facet_grid(rows=vars(cyl)) +
+  scale_fill_brewer(palette = "YlOrRd") +
+  scale_color_discrete(name="Transmission Type",
+                      breaks=c("0","1"),
+                      labels=c("automatic","manual"))+
+  labs(title = "Cylinders vs MPG",x="Miles Per Gallon",y="Cylinders")
+```
 
 # How do you remember all of this?
 
